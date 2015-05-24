@@ -1,4 +1,4 @@
-## Routing
+# Routing
 
 As users interact with your application, it moves through many
 different states. Ember.js gives you helpful tools for managing

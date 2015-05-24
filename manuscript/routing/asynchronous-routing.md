@@ -1,7 +1,7 @@
 This section covers some more advanced features of the router and its
 capability for handling complex async logic within your app.
 
-### A Word on Promises...
+## A Word on Promises...
 
 Ember's approach to handling asynchronous logic in the router makes
 heavy use of the concept of Promises. In short, promises are objects that
@@ -56,7 +56,7 @@ promises can be used, but if you'd like a more thorough introduction,
 take a look at the readme for [RSVP](https://github.com/tildeio/rsvp.js),
 the promise library that Ember uses.
 
-### The Router Pauses for Promises
+## The Router Pauses for Promises
 
 When transitioning between routes, the Ember router collects all of the
 models (via the `model` hook) that will be passed to the route's
@@ -104,7 +104,7 @@ This pause-on-promise behavior is extremely valuable for when you need
 to guarantee that a route's data has fully loaded before displaying a
 new template.
 
-### When Promises Reject...
+## When Promises Reject...
 
 We've covered the case when a model promise fulfills, but what if it rejects?
 
@@ -143,7 +143,7 @@ In the above example, the error event would stop right at
 make the event continue bubbling up to `route:application`, you can
 return true from the error handler.
 
-### Recovering from Rejection
+## Recovering from Rejection
 
 Rejected model promises halt transitions, but because promises are chainable,
 you can catch promise rejects within the `model` hook itself and convert
@@ -161,7 +161,7 @@ export default Ember.Route.extend({
 });
 ```
 
-### beforeModel and afterModel
+## beforeModel and afterModel
 
 The `model` hook covers many use cases for pause-on-promise transitions,
 but sometimes you'll need the help of the related hooks `beforeModel`
@@ -176,7 +176,7 @@ the `beforeModel` or `afterModel` hook to house any logic while the
 router is still gathering all of the route's models to perform a
 transition.
 
-#### `beforeModel`
+### `beforeModel`
 
 Easily the more useful of the two, the `beforeModel` hook is called
 before the router attempts to resolve the model for the given route. In
@@ -208,7 +208,7 @@ export default Ember.Route.extend({
 
 [See the API Docs for `beforeModel`](http://emberjs.com/api/classes/Ember.Route.html#method_beforeModel)
 
-#### `afterModel`
+### `afterModel`
 
 The `afterModel` hook is called after a route's model (which might be a
 promise) is resolved, and follows the same pause-on-promise semantics as
@@ -239,7 +239,7 @@ model for this route, so `model` wouldn't be called in these cases.
 
 [See the API Docs for `afterModel`](http://emberjs.com/api/classes/Ember.Route.html#method_afterModel)
 
-### More Resources
+## More Resources
 
 - [Embercasts: Client-side Authentication Part 2](http://www.embercasts.com/episodes/client-side-authentication-part-2)
 - [RC6 Blog Post describing these new features](/blog/2013/06/23/ember-1-0-rc6.html)

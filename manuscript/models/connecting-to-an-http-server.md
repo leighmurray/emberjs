@@ -15,7 +15,7 @@ The second section covers how to override these default settings to
 customize things like which URLs data is requested from and how the JSON
 data is structured.
 
-### URL Conventions
+## URL Conventions
 
 The REST adapter uses the name of the model to determine what URL to
 send JSON to.
@@ -48,7 +48,7 @@ REST adapter:
   </tbody>
 </table>
 
-### JSON Conventions
+## JSON Conventions
 
 Given the following models:
 
@@ -94,7 +94,7 @@ return the JSON in the following format:
 
 To quickly prototype a model and see the expected JSON, try using the [Ember Data Model Maker](http://andycrum.github.io/ember-data-model-maker/) by Andy Crum.
 
-### Customizing the Adapter
+## Customizing the Adapter
 
 To customize the REST adapter, create a `app/adapters/application.js` file
 and export a subclass of `DS.RESTAdapter`. You can then override its properties
@@ -106,7 +106,7 @@ export default DS.RESTAdapter.extend({
 });
 ```
 
-#### Customizing a Specific Model
+### Customizing a Specific Model
 
 It's entirely possible that you need to define options for just one model instead of an application-wide customization. In that case, you can create an adapter named after the model you are specifying:
 
@@ -126,9 +126,9 @@ export default DS.RESTAdapter.extend({
 
 This allows you to easily connect to multiple API versions simultaneously or interact with different domains on a per model basis.
 
-### Customizing URLs
+## Customizing URLs
 
-#### URL Prefix
+### URL Prefix
 
 If your JSON API lives somewhere other than on the host root,
 you can set a prefix that will be added to all requests.
@@ -146,7 +146,7 @@ export default DS.RESTAdapter.extend({
 
 Requests for a `person` with ID `1`  would now go to `/api/v1/people/1`.
 
-#### URL Host
+### URL Host
 
 If your JSON API runs on a different domain than the one serving your
 Ember app, you can change the host used to make HTTP requests.
@@ -165,7 +165,7 @@ export default DS.RESTAdapter.extend({
 
 Requests for a `person` with ID `1` would now target `https://api.example.com/people/1`.
 
-#### Custom HTTP Headers
+### Custom HTTP Headers
 
 Some APIs require HTTP headers, e.g. to provide an API key. Arbitrary
 headers can be set as key/value pairs on the `RESTAdapter`'s `headers`

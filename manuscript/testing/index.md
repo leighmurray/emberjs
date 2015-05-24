@@ -8,7 +8,7 @@ assume that you would like to have [automated tests] in place for your applicati
 There are two different classifications of tests that you will need: 
 **Acceptance** and **Unit**.
 
-### Acceptance Tests
+## Acceptance Tests
 
 Acceptance tests are used to test user interaction and application flow. With 
 the example scenario above, some acceptance tests you might write are:
@@ -17,7 +17,7 @@ the example scenario above, some acceptance tests you might write are:
 * A user is able to create a blog post.
 * A visitor does not have access to the admin panel.
 
-### Unit Tests
+## Unit Tests
 
 Unit tests are used to test isolated chunks of functionality, or "units", without 
 worrying about their dependencies. Some examples of unit tests for the scenario 
@@ -30,16 +30,16 @@ above might be:
 * A post has a title
 * A post's title must be no longer than 50 characters
 
-### Testing Frameworks
+## Testing Frameworks
 
 [QUnit] is the default testing framework for this guide, but others are 
 supported through third-party addons.
 
-### How to Run Your Tests
+## How to Run Your Tests
 
 Run your tests with `ember test` on the command-line. You can re-run your tests on every file-change with `ember test --server`. For more details and options, see [Ember CLI – Testing](http://www.ember-cli.com/#testing) and `ember help test`.
 
-### Contributing
+## Contributing
 
 The Ember testing guide provides best practices and examples on how to test your
 Ember applications. If you find any errors or believe the documentation can be

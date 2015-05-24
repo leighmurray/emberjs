@@ -1,8 +1,8 @@
-### Problem
+## Problem
 
 You want to add analytics to your Ember application.
 
-### Solution
+## Solution
 Subscribe to the `didTransition` event inside your application router.
 
 In the following examples we're using Google Analytics but it could be any other analytics product.
@@ -51,7 +51,7 @@ Router.reopen({
 export default Router;
 ```
 
-### Discussion
+## Discussion
 
 The `didTransition` event is responsible for notifying listeners of any URL
 changes, in this example we are getting the path after the hash in the url so we

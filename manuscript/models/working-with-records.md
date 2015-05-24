@@ -1,4 +1,4 @@
-### Modifying Attributes
+## Modifying Attributes
 
 Once a record has been loaded, you can begin making changes to its
 attributes. Attributes behave just like normal properties in Ember.js

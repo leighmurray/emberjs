@@ -1,8 +1,8 @@
-### Problem
+## Problem
 
 The page scroller keeps in the same position when you go from one page to another. For instance, if you scroll down a long list of displayed elements on a page and then you navigate to another page with another long list of elements, you should be able to notice that scroll position is not being reset.
 
-### Solution
+## Solution
 
 Add the following mixin to the affected Routes:
 
@@ -29,6 +29,6 @@ export default Ember.Route.extend(ResetScroll, {
 });
 ```
 
-<!---#### Example
+<!---### Example
 
 <a class="jsbin-embed" href="http://jsbin.com/yiqijopilo/1/embed?live">Ember Starter Kit</a><script src="http://static.jsbin.com/js/embed.js"></script>-->

@@ -3,7 +3,7 @@ be created. Click on `Render Performance` to start inspecting render times.
 
 <img src="images/guides/ember-inspector/render-performance-screenshot.png" width="680"/>
 
-### Accuracy
+## Accuracy
 
 The inspector itself adds a delay to your rendering, so the render durations you see
 are not an accurate representation of your production apps. Use these
@@ -11,7 +11,7 @@ numbers to compare durations and debug rendering bottlenecks, but not as
 a way to accurately measure rendering times.
 
 
-### Toolbar
+## Toolbar
 
 Click on the "clear" icon to remove existing render logs.
 

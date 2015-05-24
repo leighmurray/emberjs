@@ -1,8 +1,8 @@
-### Problem
+## Problem
 You want to create a reusable [Tweet button](https://dev.twitter.com/docs/tweet-button)
 for your application.
 
-### Solution
+## Solution
 Write a custom component that renders the Tweet button with specific attributes
 passed in.
 
@@ -31,7 +31,7 @@ window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.
 
 Note: the Twitter api does change from time to time. Refer to the [documents](https://dev.twitter.com/web/tweet-button) if necessary.
 
-### Discussion
+## Discussion
 Twitter's widget library expects to find an `<a>` tag on the page with specific `data-` attributes applied.
 It takes the values of these attributes and, when the `<a>` tag is clicked, opens an iFrame for twitter sharing.
 
@@ -45,6 +45,6 @@ attributes will be updated to match the new values.
 
 An appropriate tag and css class are applied through the `tagName` and `classNames` properties.
 
-<!---#### Example
+<!---### Example
 
 <a class="jsbin-embed" href="http://jsbin.com/hihoboforo/4/edit?live">JS Bin</a>-->

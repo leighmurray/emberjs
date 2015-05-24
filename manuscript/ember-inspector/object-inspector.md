@@ -3,7 +3,7 @@ While using the inspector, click on any Ember object to open the object inspecto
 properties.
 
 
-### Viewing Objects
+## Viewing Objects
 
 Here's what you see when you click on the `posts` controller.
 
@@ -21,9 +21,9 @@ compute it.
 All properties are bound to your app, so property updates in your app will be reflected live in the inspector.
 
 
-### Sending Objects from and to the Console
+## Sending Objects from and to the Console
 
-#### Object Inspector to the Console
+### Object Inspector to the Console
 
 You can send objects and properties to the console by clicking on the `$E` button.
 This will set the value to the global `$E` variable.
@@ -38,7 +38,7 @@ console.
 <img src="images/guides/ember-inspector/object-inspector-property-$E.png" width="450">
 
 
-#### Console to the Object Inspector
+### Console to the Object Inspector
 
 You can send Ember objects and arrays to the object inspector by using
 `EmberInspector.inspect`.
@@ -52,7 +52,7 @@ Make sure the Ember Inspector is active when you call this method.
 
 
 
-### Editing Properties
+## Editing Properties
 
 You can edit `String`, `Number`, and `Boolean` properties in the inspector.
 Changes will be reflected immediately in your app. Templates bound to
@@ -70,7 +70,7 @@ Date values will open a date picker while editing.
 Edit the property and press the `ENTER` key to commit the change, or `ESC` to cancel.
 
 
-### Navigating the Object Inspector
+## Navigating the Object Inspector
 
 Properties that are themselves Ember objects or arrays can be inspected
 too. Click on the property's value to inspect it.
@@ -89,7 +89,7 @@ You can see the current path of the inspected object at the top of the
 inspector. You can go back to the previous object by clicking on the
 left-facing arrow at the top left.
 
-### Custom Property Grouping
+## Custom Property Grouping
 
 Some objects' properties are not only grouped by inheritance, but also
 by framework level semantics. For example, if you inspect an Ember Data

@@ -63,7 +63,7 @@ To learn how to change the element Ember uses for your component, see
 Element](customizing-a-components-element).
 
 
-### Defining a Component Subclass
+## Defining a Component Subclass
 
 Often times, your components will just encapsulate certain snippets of
 Handlebars templates that you find yourself using over and over. In

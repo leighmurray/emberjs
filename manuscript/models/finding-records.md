@@ -5,7 +5,7 @@ uses `find`, `findAll`, and `findQuery` based on the supplied arguments.
 The first argument to `store.find()` is always the record type. The optional second
 argument determines if a request is made for all records, a single record, or a query.
 
-### Finding All Records of a Type
+## Finding All Records of a Type
 
 ```javascript
 var posts = this.store.find('post'); // => GET /posts
@@ -28,7 +28,7 @@ will not work--you'll have to use `objectAt(index)` instead.
 
 [1]: http://emberjs.com/api/classes/Ember.Enumerable.html
 
-### Finding a Single Record
+## Finding a Single Record
 
 If you provide a number or string as the second argument to `store.find()`,
 Ember Data will assume that you are passing in an ID and attempt to retrieve a record of the type passed in as the first argument with that ID. This will
@@ -38,7 +38,7 @@ return a promise that fulfills with the requested record:
 var aSinglePost = this.store.find('post', 1); // => GET /posts/1
 ```
 
-### Querying For Records
+## Querying For Records
 
 If you provide a plain object as the second argument to `find`, Ember Data will
 make a `GET` request with the object serialized as query params. This method returns
@@ -51,7 +51,7 @@ For example, we could search for all `person` models who have the name of
 var peters = this.store.find('person', { name: "Peter" }); // => GET to /persons?name=Peter
 ```
 
-### Integrating with the Route's Model Hook
+## Integrating with the Route's Model Hook
 
 As discussed in [Specifying a Route's Model][3], routes are
 responsible for telling their template which model to render.

@@ -4,7 +4,7 @@ Steps to install the inspector for Google Chrome, Firefox, other
 browsers (Bookmarklet), and apps running on mobile devices are explained
 below.
 
-### Google Chrome
+## Google Chrome
 
 You can install the Ember Inspector on Google Chrome as a new developer
 tool panel.
@@ -22,7 +22,7 @@ and click on the `Ember` tab next to the rest of the devtools panels.
 
 [ember-inspector-chrome]: https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi
 
-#### File:// protocol
+### File:// protocol
 
 If you need to use the inspector with the `file://` protocol.
 
@@ -30,7 +30,7 @@ Visit the URL: `chrome://extensions` and check the "Allow access to file URLs" c
 
 <img src="images/guides/ember-inspector/installation-chrome-file-urls.png" width="400">
 
-#### Enable Tomster
+### Enable Tomster
 
 You can configure a tomster icon to show up in Chrome's url bar whenever you are visiting a site that uses Ember.js.
 
@@ -45,7 +45,7 @@ Make sure the "Display the Tomster" checkbox is checked.
 <img src="images/guides/ember-inspector/installation-chrome-tomster-checkbox.png" width="400">
 
 
-### Firefox
+## Firefox
 
 Visit the addon page on the [Mozilla Addons
 site][ember-inspector-mozilla].
@@ -62,7 +62,7 @@ and click on the `Ember` tab.
 [ember-inspector-mozilla]: https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/
 
 
-#### Enable Tomster
+### Enable Tomster
 
 To enable the tomster to show up in the url bar whenever you are
 visiting a site that uses Ember.js Ember.js visit `about:addons`.
@@ -76,7 +76,7 @@ Make sure the "Display the Tomster icon when a site runs Ember.js" checkbox is c
 <img src="images/guides/ember-inspector/installation-firefox-tomster-checkbox.png" width="400">
 
 
-### Bookmarklet
+## Bookmarklet
 
 If you are using any browser other than Chrome or Firefox, you can use the
 bookmarklet option to use the inspector.
@@ -93,7 +93,7 @@ Safari blocks popups by default, so you'll need to enable popups before
 using this option.
 
 
-### Mobile Development
+## Mobile Development
 
 If you want to run the inspector with apps running on mobile devices,
 you can use the [Ember Cli Remote Inspector][ember-cli-remote-inspector] addon.

@@ -35,7 +35,7 @@ The second tool, **service lookup**, describes when a dependency is created or f
 * Avoid the use of global variables and instances (important for testing)
 * Allow a single object instance to represent state, but share that state with other objects.
 
-### Lightweight Services with `needs`
+## Lightweight Services with `needs`
 
 A common use-case for service lookup is that of a singleton service. Often, these services will live near application state, and thus Ember provides an API that makes controller services easy to write.
 
@@ -76,7 +76,7 @@ export default Ember.Controller.extend({
 
 The session object returned in both classes is the same. `needs` provides us an easy way to share state across controllers.
 
-### Services with DOM via `needs`
+## Services with DOM via `needs`
 
 The `needs` array can fetch any singleton controller in an Ember application. This can be combined with the `render` helper to create services that also have access to the DOM.
 
@@ -133,7 +133,7 @@ Services are a simple way to share behavior between controllers and isolate resp
 
 For a more powerful way to connect Ember.js components, let's look at **dependency injection**.
 
-### Dependency Management in Ember.js
+## Dependency Management in Ember.js
 
 When an Ember application starts running, it will create and use a single instance of the
 `Ember.Container` object. This container object is responsible for managing factories and the dependencies between them. At the level of the container, a factory can be any framework component. The index template is a factory with the name `template:index`, and the application route is a factory with the name `route:application`. The container understands how to use these factories (are they singleton? Should they be instantiated?) and manages their dependencies.
@@ -144,7 +144,7 @@ If the container does not already have a requested factory, it uses a resolver t
 
 Ember's container should be viewed as an implementation detail, and is not part of the supported public API.
 
-### Dependency Injection with `register/inject`
+## Dependency Injection with `register/inject`
 
 Instead of accessing the container directly, Ember provides an API for registering factories and managing injections on the application instance with an initializer
 

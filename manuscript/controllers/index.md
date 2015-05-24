@@ -1,4 +1,4 @@
-## Controllers
+# Controllers
 
 In Ember.js, controllers allow you to decorate your models with
 display logic. In general, your models will have properties that
@@ -69,7 +69,7 @@ on the screen. This makes it easy to unit-test your model without
 having to worry about logic related to your display creeping into
 your test setup.
 
-## A Note on Coupling
+# A Note on Coupling
 
 In Ember.js, templates get their properties from controllers, which
 decorate a model.
@@ -103,7 +103,7 @@ with a controller object that contains the properties the template
 expects. From the template's perspective, a **controller** is simply
 an object that provides its data.
 
-### Representing Models
+## Representing Models
 
 Templates are always connected to controllers, not models. This
 makes it easy to separate display-specific properties from model
@@ -116,7 +116,7 @@ iterate over the model using `{{#each model as |item|}}`. This
 keeps the template from having to know about how the controller is implemented
 and makes isolation testing and refactoring easier.
 
-### Storing Application Properties
+## Storing Application Properties
 
 Not all properties in your application need to be saved to the
 server. Any time you need to store information only for the lifetime

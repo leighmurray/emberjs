@@ -5,7 +5,7 @@ conventions for customizing asynchronous transitions
 between routes by making use of `error` and `loading`
 substates.
 
-## `loading` substates
+# `loading` substates
 
 The Ember Router allows you to return promises from the various
 `beforeModel`/`model`/`afterModel` hooks in the course of a transition
@@ -96,7 +96,7 @@ Once the main async transition into `foo.bar.baz` completes, the loading
 substate will be exited, its template torn down, `foo.bar.baz` will be
 entered, and its templates rendered.
 
-### Eager vs. Lazy Async Transitions
+## Eager vs. Lazy Async Transitions
 
 Loading substates are optional, but if you provide one,
 you are essentially telling Ember that you
@@ -116,7 +116,7 @@ another route fails, a lazy transition will (by default) just remain on the
 previous route, whereas an eager transition will have already left the
 pre-transition route to enter a loading substate.
 
-### The `loading` event
+## The `loading` event
 
 If you return a promise from the various `beforeModel`/`model`/`afterModel` hooks,
 and it doesn't immediately resolve, a `loading` event will be fired on that route
@@ -160,7 +160,7 @@ export default Ember.Route.extend({
 });
 ```
 
-## `error` substates
+# `error` substates
 
 Ember provides an analogous approach to `loading` substates in
 the case of errors encountered during a transition.
@@ -193,7 +193,7 @@ If no viable error substates can be found, an error message will be
 logged.
 
 
-### `error` substates with dynamic segments
+## `error` substates with dynamic segments
 
 Routes with dynamic segments are often mapped to a mental model of "two
 separate levels." Take for example:
@@ -237,7 +237,7 @@ Router.map(function() {
 [Example JSBin](http://jsbin.com/tujepi)
 
 
-### The `error` event
+## The `error` event
 
 If `route:articles/overview`'s `model` hook returns a promise that rejects (for
 instance the server returned an error, the user isn't logged in,

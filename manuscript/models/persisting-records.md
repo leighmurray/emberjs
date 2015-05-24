@@ -22,7 +22,7 @@ store.find('post', 1).then(function (post) {
 });
 ```
 
-### Promises
+## Promises
 
 `save()` returns a promise, so it is extremely easy to handle success and failure scenarios.
  Here's a common pattern:

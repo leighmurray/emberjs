@@ -1,4 +1,4 @@
-# Ember Data Record Lifecycle
+ Ember Data Record Lifecycle
 
 The goal of this guide is to walk you through the lifecycle of an Ember
 Data record.
@@ -23,7 +23,7 @@ The guide will walk through the initial `find` on the model, how the
 adapter loads the data in from the server, and how the server data is
 materialized into an Ember Data record.
 
-## Step 1: Finding a Record
+# Step 1: Finding a Record
 
 When you request a record using `store.find('person', 1)`, Ember Data
 will ask the store to find the record.
@@ -47,7 +47,7 @@ data.
   <img src="images/ember-data-guide/step3.png">
 </figure>
 
-## Step 2: Adapter Loads Data Into the Store
+# Step 2: Adapter Loads Data Into the Store
 
 At some point later, the server will return some data to the adapter.
 
@@ -66,7 +66,7 @@ This will, in turn, notify all attributes (`DS.attr`) and relationships
   <img src="images/ember-data-guide/step6.png">
 </figure>
 
-## Step 3: Getting an Attribute
+# Step 3: Getting an Attribute
 
 In response to the notification, the app will typically request some
 attribute. In this case, imagine that the `model:person` was represented by
@@ -86,7 +86,7 @@ data hash loads in from the server, the registered observer will call
   <img src="images/ember-data-guide/step7.png">
 </figure>
 
-## Step 4: Materialization
+# Step 4: Materialization
 
 Because this is the first time the record needs its backend-provided
 data, it will ask the store to load it in using `materializeData`.
@@ -139,7 +139,7 @@ requested `firstName`.
 Because the adapter has already populated the record, trying to `get`
 its `lastName` will not trigger additional materialization.
 
-## Identity Map
+# Identity Map
 
 Additional requests for Person 1 will skip all of these steps, because
 `store.find('person', 1)` will see that it has already created an instance
@@ -151,7 +151,7 @@ ID will return the same object.
 This feature is known as an "identity map", because it guarantees
 JavaScript _identity_ for objects representing the same backend data.
 
-## Practical Note
+# Practical Note
 
 In the example above, we used a template that rendered the `model:person`
 object directly. As a result, we got partially loaded output that

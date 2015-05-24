@@ -1,6 +1,6 @@
 Ember.js provides several helpers that allow you to render other views and templates in different ways.
 
-### The `{{partial}}` Helper
+## The `{{partial}}` Helper
 
 `{{partial}}` takes the template to be rendered as an argument, and renders that template in place.
 
@@ -24,7 +24,7 @@ Output:
   Written by Yehuda Katz
 </div>
 ```
-### The `{{view}}` Helper
+## The `{{view}}` Helper
 
 This helper works like the partial helper, except instead of providing a template to be rendered within the current template, you provide a view class.  The view controls what template is rendered.
 
@@ -73,7 +73,7 @@ When using `{{view "author"}}`:
 
 For more information, see [Inserting Views in Templates](views/inserting-views-in-templates).
 
-### The `{{render}}` Helper
+## The `{{render}}` Helper
 
 `{{render}}` takes two parameters:
 
@@ -127,9 +127,9 @@ In this example, render will:
 
 Note: `{{render}}` cannot be called multiple times for the same route when not specifying a model.
 
-### Comparison Table
+## Comparison Table
 
-#### General
+### General
 
 <table>
   <thead>
@@ -166,7 +166,7 @@ Note: `{{render}}` cannot be called multiple times for the same route when not s
   </tbody>
 </table>
 
-#### Specific
+### Specific
 
 <table class='specific'>
   <thead>

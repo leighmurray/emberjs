@@ -22,9 +22,9 @@ Ember.js, therefore, marries the tools and concepts of native
 GUI frameworks with support for the feature that makes the web so
 powerful: the URL.
 
-### Concepts
+## Concepts
 
-#### Templates
+### Templates
 
 A **template**, written in the Handlebars templating language, describes
 the user interface of your application. Each template is backed by a
@@ -41,7 +41,7 @@ In addition to plain HTML, templates can contain:
 * **Components**, custom HTML elements that you can use to clean up
   repetitive templates or create reusable controls.
 
-#### Router
+### Router
 
 The **router** translates a URL into a series of nested templates, each
 backed by a model. As the templates or models being shown to the user
@@ -52,14 +52,14 @@ This means that, at any point, users are able to share the URL of your
 app. When someone clicks the link, they reliably see the same content as
 the original user.
 
-#### Components
+### Components
 
 A **component** is a custom HTML tag whose behavior you implement using
 JavaScript and whose appearance you describe using Handlebars templates.
 They allow you to create reusable controls that can simplify your
 application's templates.
 
-#### Models
+### Models
 
 A **model** is an object that stores _persistent state_. Templates are
 responsible for displaying the model to the user by turning it into
@@ -67,7 +67,7 @@ HTML. In many applications, models are loaded via an HTTP JSON API,
 although Ember is agnostic to the backend that you choose.
 
 
-#### Route
+### Route
 
 A **route** is an object that tells the template which model it should
 display.

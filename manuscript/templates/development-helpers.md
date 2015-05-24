@@ -1,10 +1,10 @@
-## Development Helpers
+# Development Helpers
 
 Handlebars and Ember come with a few helpers that can make developing your
 templates a bit easier. These helpers make it simple to output variables into
 your browser's console, or activate the debugger from your templates.
 
-### Logging
+## Logging
 
 The `{{log}}` helper makes it easy to output variables or expressions in the
 current rendering context into your browser's console:
@@ -15,7 +15,7 @@ current rendering context into your browser's console:
 
 The `{{log}}` helper also accepts primitive types such as strings or numbers.
 
-### Adding a breakpoint
+## Adding a breakpoint
 
 The ``{{debugger}}`` helper provides a handlebars equivalent to JavaScript's
 `debugger` keyword.  It will halt execution inside the debugger helper and give

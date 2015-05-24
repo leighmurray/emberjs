@@ -32,7 +32,7 @@ Because the `fullName` computed property depends on `firstName`,
 updating `firstName` will fire observers on `fullName` as well.
 
 
-### Observers and asynchrony
+## Observers and asynchrony
 
 Observers in Ember are currently synchronous. This means that they will fire
 as soon as one of the properties they observe changes. Because of this, it
@@ -84,7 +84,7 @@ person.set('firstName', 'John');
 person.set('lastName', 'Smith');
 ```
 
-### Observers and object initialization
+## Observers and object initialization
 
 Observers never fire until after the initialization of an object is complete.
 
@@ -104,7 +104,7 @@ Person = Ember.Object.extend({
 });
 ```
 
-### Unconsumed Computed Properties Do Not Trigger Observers
+## Unconsumed Computed Properties Do Not Trigger Observers
 
 If you never `get` a computed property, its observers will not fire even if
 its dependent keys change. You can think of the value changing from one unknown
@@ -119,7 +119,7 @@ If you need to observe a computed property but aren't currently retrieving it,
 just get it in your init method.
 
 
-### Without prototype extensions
+## Without prototype extensions
 
 You can define inline observers by using the `Ember.observer` method if you
 are using Ember without prototype extensions:
@@ -132,7 +132,7 @@ Person.reopen({
 });
 ```
 
-### Outside of class definitions
+## Outside of class definitions
 
 You can also add observers to an object outside of a class definition
 using addObserver:

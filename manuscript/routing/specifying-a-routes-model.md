@@ -27,7 +27,7 @@ export default Ember.Route.extend({
 
 <a class="jsbin-embed" href="http://jsbin.com/mezoca/embed?js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
-### Asynchronously Loading Models
+## Asynchronously Loading Models
 
 In the above example, the model data was returned synchronously from the
 `model` hook. This means that the data was available immediately and
@@ -94,7 +94,7 @@ export default Ember.Route.extend({
 });
 ```
 
-### Setting Up Controllers with the Model
+## Setting Up Controllers with the Model
 
 So what actually happens with the value you return from the `model`
 hook?
@@ -116,7 +116,7 @@ have any data to render!
 
 [1]: setting-up-a-controller
 
-### Dynamic Models
+## Dynamic Models
 
 Some routes always display the same model. For example, the `/photos`
 route will always display the same list of photos available in the
@@ -199,7 +199,7 @@ when it is entered via the URL. If the route is entered through a transition
 already provided and the hook is not executed. Routes without dynamic segments
 will always execute the model hook.
 
-### Refreshing your model
+## Refreshing your model
 
 If your data represented by your model is being updated frequently, you may
 want to refresh it periodically:
@@ -212,7 +212,7 @@ action called `invalidateModel`. Calling the route's `refresh` method will force
 Ember to execute the model hook again.
 
 
-### Ember Data
+## Ember Data
 
 Many Ember developers use a model library to make finding and saving
 records easier than manually managing Ajax calls. In particular, using a

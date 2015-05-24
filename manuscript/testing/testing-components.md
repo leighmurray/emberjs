@@ -1,7 +1,7 @@
 _Unit testing methods and computed properties follows previous patterns shown
 in [Unit Testing Basics] because Ember.Component extends Ember.Object._
 
-#### Setup
+### Setup
 
 Create the component to test using `ember generate component pretty-color`:
 This Ember component:
@@ -86,7 +86,7 @@ test('template is rendered with the color name', function(assert) {
 });
 ```
 
-### Interacting with Components in the DOM
+## Interacting with Components in the DOM
 
 Ember Components are a great way to create powerful, interactive, self-contained
 custom HTML elements. Because of this, it is important to test the
@@ -139,7 +139,7 @@ test('clicking link updates the title', function(assert) {
 });
 ```
 
-### `sendAction` validation in components
+## `sendAction` validation in components
 
 Components often utilize `sendAction`, which is a way to interact with the Ember
 application. Here's a simple component that sends the action `internalAction`
@@ -202,7 +202,7 @@ test('trigger external action when button is clicked', function(assert) {
 ```
 
 <!---
-### Components Using Other Components
+## Components Using Other Components
 
 Sometimes components are easier to maintain if they're broken up into parent and child
 components. Here is a simple example:

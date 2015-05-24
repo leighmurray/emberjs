@@ -3,7 +3,7 @@ Ember.js attempts to find corresponding Route, Controller, View, and Template
 classes named according to naming conventions. If an implementation of any of
 these objects is not found, appropriate objects will be generated in memory for you.
 
-#### Generated routes
+### Generated routes
 
 Given you have the following route:
 
@@ -17,12 +17,12 @@ When you navigate to `/posts`, Ember.js looks for `route:posts`.
 If it doesn't find it, it will automatically generate an `route:posts` for you.
 
 
-#### Generated Controllers
+### Generated Controllers
 
 If you navigate to route `posts`, Ember.js looks for a controller called `controller:posts`.
 If you did not define it, one will be generated for you.
 
-#### Generated Views and Templates
+### Generated Views and Templates
 
 A route also expects a view and a template.  If you don't define a view,
 a view will be generated for you.

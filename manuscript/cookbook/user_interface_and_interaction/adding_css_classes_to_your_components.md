@@ -1,8 +1,8 @@
-### Problem
+## Problem
 
 You want to add CSS class names to your Ember Components.
 
-### Solution
+## Solution
 
 Set additional class names with the `classNames` property of subclassed components:
 
@@ -20,7 +20,7 @@ export default Ember.Component.extend({
 <div class="css-framework-fancy-class"></div>
 ```
 
-### Discussion
+## Discussion
 
 If desired, you can apply multiple class names.
 
@@ -28,7 +28,7 @@ If desired, you can apply multiple class names.
 classNames: ['bold', 'italic', 'blue']
 ```
 
-<!---#### Example
+<!---### Example
 
 <a class="jsbin-embed" href="http://jsbin.com/gihupoqeja/2/embed?live">JS Bin</a>
 

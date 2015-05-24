@@ -3,7 +3,7 @@ to common Ember questions and problems. Anyone is welcome to <a href="/guides/co
 
 Here are all of the available recipes:
 
-### Contributing
+## Contributing
 
 1. [Understanding the Cookbook Format](./contributing/understanding_the_cookbook_format)
 1. [Participating If You Know Ember](./contributing/participating_if_you_know_ember)
@@ -11,7 +11,7 @@ Here are all of the available recipes:
 1. [Deciding If A Recipe is a Good Fit](./contributing/deciding_if_a_recipe_is_a_good_fit)
 1. [Suggesting A Recipe](./contributing/suggesting_a_recipe)
 
-### User Interface &amp; Interaction
+## User Interface &amp; Interaction
 
 1. [Adding CSS Classes to Your Components](./user_interface_and_interaction/adding_css_classes_to_your_components)
 1. [Adding CSS Classes to Your Components Based on Properties](./user_interface_and_interaction/adding_css_classes_to_your_components_based_on_properties)
@@ -21,17 +21,17 @@ Here are all of the available recipes:
 1. [Using Modal Dialogs](./user_interface_and_interaction/using_modal_dialogs)
 1. [Resetting scroll on route changes](./user_interface_and_interaction/resetting_scroll_on_route_changes)
 
-### Event Handling &amp; Data Binding
+## Event Handling &amp; Data Binding
 
 1. [Binding Properties of an Object to Its Own Properties](./event_handling_and_data_binding/binding_properties_of_an_object_to_its_own_properties)
 
-### Helpers &amp; Components
+## Helpers &amp; Components
 
 1. [Creating Reusable Social Share Buttons](./helpers_and_components/creating_reusable_social_share_buttons)
 2. [A Spinning Button for Asynchronous Actions](./helpers_and_components/spin_button_for_asynchronous_actions)
 3. [Adding Google Analytics Tracking](./helpers_and_components/adding_google_analytics_tracking)
 
-### Working with Objects
+## Working with Objects
 
 1. [Incrementing Or Decrementing A Property](./working_with_objects/incrementing_or_decrementing_a_property)
 1. [Setting Multiple Properties At Once](./working_with_objects/setting_multiple_properties_at_once)

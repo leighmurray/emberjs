@@ -38,7 +38,7 @@ test('add new post', function(assert) {
 });
 ```
 
-### Testing Transitions
+## Testing Transitions
 
 Suppose we have an application which requires authentication. When a visitor
 visits a certain URL as an unauthenticated user, we expect them to be transitioned

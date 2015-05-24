@@ -1,7 +1,7 @@
-### Problem
+## Problem
 You want to increment or decrement a property.
 
-### Solution
+## Solution
 Use the `incrementProperty` or `decrementProperty` methods of `Ember.Object`.
 
 To increment:
@@ -16,13 +16,13 @@ To decrement:
 person.decrementProperty('age');
 ```
 
-### Discussion
+## Discussion
 You can optionally specify a value to increment or decrement by:
 
 ```javascript
 person.incrementProperty('age', 10);
 ```
 
-<!---#### Example
+<!---### Example
 
 <a class="jsbin-embed" href="http://jsbin.com/huxojisaha/1/edit?live">JS Bin</a>-->

@@ -41,7 +41,7 @@ test('levelUp', function(assert) {
 });
 ```
 
-## Testing Relationships
+# Testing Relationships
 
 For relationships you probably only want to test that the relationship
 declarations are setup properly.

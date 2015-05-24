@@ -11,27 +11,27 @@ Security fixes should not introduce new APIs, but may, if strictly
 necessary, break existing APIs. Such breakages should be as limited as
 possible.
 
-### Bug Fixes
+## Bug Fixes
 
-#### Urgent Bug Fixes
+### Urgent Bug Fixes
 
 Urgent bugfixes are bugfixes that need to be applied to the existing
 release branch. If possible, they should be made on master and prefixed
 with [BUGFIX release].
 
-#### Beta Bug Fixes
+### Beta Bug Fixes
 
 Beta bugfixes are bugfixes that need to be applied to the beta branch.
 If possible, they should be made on master and tagged with [BUGFIX
 beta].
 
-#### Security Fixes
+### Security Fixes
 
 Security fixes need to be applied to the beta branch, the current
 release branch, and the previous tag. If possible, they should be made
 on master and tagged with [SECURITY].
 
-### Features
+## Features
 
 Features must always be wrapped in a feature flag. Tests for the feature
 must also be wrapped in a feature flag.
@@ -50,7 +50,7 @@ if (Ember.FEATURES.isEnabled("feature")) {
 Tests will always run with all features on, so make sure that any tests
 for the feature are passing against the current state of the feature.
 
-#### Commits
+### Commits
 
 Commits related to a specific feature should include  a prefix like
 [FEATURE htmlbars]. This will allow us to quickly identify all commits
@@ -62,7 +62,7 @@ If a feature has made it into beta or release, and you make a commit to
 master that fixes a bug in the feature, treat it like a bugfix as
 described above.
 
-#### Feature Naming Conventions
+### Feature Naming Conventions
 
 ```config/environment.js
 Ember.FEATURES["<packageName>-<feature>"] // if package specific
@@ -70,7 +70,7 @@ Ember.FEATURES["container-factory-injections"]
 Ember.FEATURES["htmlbars"]
 ```
 
-### Builds
+## Builds
 
 The Canary build, which is based off master, will include all features,
 guarded by the conditionals in the original source. This means that
@@ -89,7 +89,7 @@ module.exports = function(environment) {
 }
 ```
 
-### `features.json`
+## `features.json`
 
 The root of the repository will contain a features.json file, which will
 contain a list of features that should be enabled for beta or release
@@ -107,7 +107,7 @@ features after the original branch. It may remove features.
 The build process will remove any features not included in the list, and
 remove the conditionals for features in the list.
 
-### Travis Testing
+## Travis Testing
 
 For a new PR:
 
@@ -130,18 +130,18 @@ The idea is that new commits should be submitted as PRs to ensure they
 apply cleanly, and once the merge button is pressed, Travis will apply
 them to the right branches.
 
-### Go/No-Go Process
+## Go/No-Go Process
 
 Every six weeks, the core team goes through the following process.
 
-#### Beta Branch
+### Beta Branch
 
 All remaining features on the beta branch are vetted for readiness. If
 any feature isn't ready, it is removed from features.json.
 
 Once this is done, the beta branch is tagged and merged into release.
 
-#### Master Branch
+### Master Branch
 
 All features on the master branch are vetted for readiness. In order for
 a feature to be considered "ready" at this stage, it must be ready as-is
@@ -154,7 +154,7 @@ opportunity for a feature to make it soon enough.
 Once this is done, the master branch is merged into beta. A
 `features.json` file is added with the features that are ready.
 
-### Beta Releases
+## Beta Releases
 
 Every week, we repeat the Go/No-Go process for the features that remain
 on the beta branch. Any feature that has become unready is removed from

@@ -55,7 +55,7 @@ Now we can use this property in our template:
 {{longSongCount}} songs over 30 seconds.
 ```
 
-### Sorting
+## Sorting
 
 The `Ember.ArrayController` uses the [Ember.SortableMixin](http://emberjs.com/api/classes/Ember.SortableMixin.html) to allow sorting
 of content. There are two properties that can be set in order to set up sorting:
@@ -67,7 +67,7 @@ export default Ember.ArrayController.extend({
 });
 ```
 
-### Item Controller
+## Item Controller
 
 It is often useful to specify a controller to decorate individual items in
 the `ArrayController` while iterating over them. This can be done by

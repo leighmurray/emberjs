@@ -1,6 +1,6 @@
 Testing with asynchronous calls and promises in Ember may seem tricky at first, but with a little explanation things should become clearer.
 
-### Promises, Ember and the Run Loop
+## Promises, Ember and the Run Loop
 
 In order to fully explain testing promises & asynchronous code, it's important that you have a clear grasp of the Ember run loop. If you haven't yet done so, please read about them in the [Promises](http://emberjs.com/api/classes/Ember.RSVP.Promise.html) and [Understanding Ember run loop guide](understanding-ember/run-loop/).
 
@@ -184,7 +184,7 @@ If you're using a promise, but there's a chance it might resolves after the test
 
 <a class="jsbin-embed" href="http://jsbin.com/qoyinucu/46/embed?js,output">Async promise example</a>
 
-## AJAX
+# AJAX
 
 AJAX requests are the most prevalent use case where you will be creating promises.  While testing it's likely you will want to mock your AJAX requests to the server.  Below we've included examples for [ic-ajax](https://github.com/instructure/ic-ajax). Feel free to use other mocking libraries such as [Mockjax](https://github.com/appendto/jquery-mockjax), but it's important to note, that Mockjax and other libraries are unaware of the run loop and won't wrap their resolve in a run call.  This may resolve in promises being run outside the realm of the run loop and will result in errors.
 

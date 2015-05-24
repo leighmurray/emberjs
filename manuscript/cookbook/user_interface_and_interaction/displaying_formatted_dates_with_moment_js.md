@@ -1,8 +1,8 @@
-### Problem
+## Problem
 
 Display JavaScript Date objects in human readable format.
 
-### Solution
+## Solution
 
 There are two ways of formatting the value:
 
@@ -70,7 +70,7 @@ export default Ember.Controller.extend({
 <div>{{formattedDate}}</div>
 ```
 
-### Discussion
+## Discussion
 
 Both helper and computed property can format your date value. 
 Which one do I use and when?
@@ -87,6 +87,6 @@ Handlebars helper with one big difference:
 `formattedDate` can be consumed later without applying
 date format on the date property again.
 
-<!---#### Example
+<!---### Example
 
 <a class="jsbin-embed" href="http://jsbin.com/nipujoneqe/1/embed?live">JS Bin</a>-->

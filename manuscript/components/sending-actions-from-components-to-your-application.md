@@ -24,7 +24,7 @@ when the button was clicked.
 Luckily, components have a `sendAction()` method that allows them to
 send actions specified when the component is used in a template.
 
-### Sending a Primary Action
+## Sending a Primary Action
 
 Many components only send one kind of action. For example, a button
 component might send an action when it is clicked on; this is the
@@ -55,7 +55,7 @@ export default Ember.Component.extend({
 In the above example, the `my-button` component will send the `showUser`
 action when the component is clicked.
 
-### Sending Parameters with an Action
+## Sending Parameters with an Action
 
 You may want to provide additional context to the route or controller
 handling an action. For example, a button component may want to tell a
@@ -145,7 +145,7 @@ a parameter by setting the component's `param` attribute.
 
 <!---<a class="jsbin-embed" href="http://jsbin.com/tihavobiki/1/embed?live">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>-->
 
-### Sending Multiple Actions
+## Sending Multiple Actions
 
 Depending on the complexity of your component, you may need to let users
 specify multiple different actions for different events that your
@@ -169,7 +169,7 @@ calling `this.sendAction('cancel')`.
 
 <!---<a class="jsbin-embed" href="http://jsbin.com/fimevowehe/2/embed?live">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>-->
 
-### Actions That Aren't Specified
+## Actions That Aren't Specified
 
 If someone using your component does not specify an action for a
 particular event, calling `sendAction()` has no effect.
@@ -192,7 +192,7 @@ effect if the user clicks it:
 {{my-button}}
 ```
 
-### Thinking About Component Actions
+## Thinking About Component Actions
 
 In general, you should think of component actions as translating a
 _primitive event_ (like a mouse click or an `<audio>` element's `pause`

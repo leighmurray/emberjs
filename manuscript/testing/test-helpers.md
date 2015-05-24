@@ -21,7 +21,7 @@ your tests because there's less boilerplate in them.
 Ember includes several helpers to facilitate acceptance testing. There are two
 types of helpers: **asynchronous** and **synchronous**.
 
-### Asynchronous Helpers
+## Asynchronous Helpers
 
 Asynchronous helpers are "aware" of (and wait for) asynchronous behavior within
 your application, making it much easier to write deterministic tests.
@@ -48,7 +48,7 @@ next one starts.
   - Visits the given route and returns a promise that fulfills when all resulting
      async behavior is complete.
 
-### Synchronous Helpers
+## Synchronous Helpers
 
 Synchronous helpers are performed immediately when triggered.
 
@@ -64,7 +64,7 @@ Synchronous helpers are performed immediately when triggered.
     conflicts with the test framework's reporter, and this is done by default
     if the context is not specified.
 
-### Wait Helpers
+## Wait Helpers
 
 The `andThen` helper will wait for all preceding asynchronous helpers to
 complete prior to progressing forward. Let's take a look at the following
@@ -101,7 +101,7 @@ In the `andThen` helper, we finally make our call to `assert.equal` which makes 
 assertion that the text found in the first li of the ul whose class is "posts"
 is equal to "My new post".
 
-### Custom Test Helpers
+## Custom Test Helpers
 
 For creating your own test helper, just run `ember generate test-helper
 <helper-name>`. Here is the result of running `ember g test-helper

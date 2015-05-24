@@ -103,7 +103,7 @@ This would render this HTML:
 <div class="ember-view highestPriority">
 ```
 
-#### Attribute Bindings on a View
+### Attribute Bindings on a View
 
 You can bind attributes to the DOM element that represents a view by using `attributeBindings`:
 
@@ -125,7 +125,7 @@ export default Ember.View.extend({
 });
 ```
 
-### Customizing a View's Element from Handlebars
+## Customizing a View's Element from Handlebars
 
 When you append a view, it creates a new HTML element that holds its content.
 If your view has any child views, they will also be displayed as child nodes

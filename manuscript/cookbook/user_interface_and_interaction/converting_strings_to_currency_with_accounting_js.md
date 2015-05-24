@@ -1,10 +1,10 @@
-### Problem
+## Problem
 
 You're displaying formatted values in user inputs as currency with
 [Accounting.js][accounting] and need to remove the decoration to set the
 attributes upstream.
 
-### Solution
+## Solution
 
 Make use of the [computed property's setter][setters] to remove the
 display formatting and set the property to the proper value.
@@ -21,7 +21,7 @@ formattedAmount: function(key, value) {
 }.property('amount')
 ```
 
-<!---#### Example
+<!---### Example
 
 <a class="jsbin-embed" href="http://emberjs.jsbin.com/AqeVuZI/2/embed?live">JS Bin</a>-->
 [setters]: /guides/object-model/computed-properties/

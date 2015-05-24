@@ -1,4 +1,4 @@
-## Ember.ContainerView
+# Ember.ContainerView
 
 As you probably know by now, views usually create their child views
 by using the `{{view}}` helper. However, it is sometimes useful to
@@ -26,7 +26,7 @@ container.pushObject(secondView);
 // firstView and secondView.
 ```
 
-### Defining the Initial Views of a Container View
+## Defining the Initial Views of a Container View
 
 There are a few ways to specify which initial child views a
 `ContainerView` should render. The most straight-forward way is to add
@@ -78,7 +78,7 @@ container.get('firstView').toString(); //=> '<App.FirstView:ember123>'
 container.get('secondView').toString(); //=> '<App.SecondView:ember124>'
 ```
 
-### It Feels Like an Array Because it _is_ an Array
+## It Feels Like an Array Because it _is_ an Array
 
 You may have noticed that some of these examples use `pushObject` to add
 a child view, just like you would interact with an Ember array.

@@ -1,4 +1,4 @@
-#### Should I use a query or a filter to search records?
+### Should I use a query or a filter to search records?
 
 It depends on how many records you want to search and whether they have
 been loaded into the store.
@@ -82,7 +82,7 @@ export default Ember.Route.extend({
 });
 ```
 
-#### How do I inform Ember Data about new records created on the backend?
+### How do I inform Ember Data about new records created on the backend?
 
 When you request a record using Ember Data's `store.find` method, Ember
 will automatically load the data into the store. This allows Ember to

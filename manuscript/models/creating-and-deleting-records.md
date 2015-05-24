@@ -40,7 +40,7 @@ store.find('user', 1).then(function(user) {
 });
 ```
 
-### Deleting Records
+## Deleting Records
 
 Deleting records is just as straightforward as creating records. Just call `deleteRecord()`
 on any instance of `DS.Model`. This flags the record as `isDeleted` and thus removes

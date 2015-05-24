@@ -1,6 +1,6 @@
 Acceptance tests are generally used to test important workflows within your application. They emulate user interaction and confirm expected results.
 
-### Introduction
+## Introduction
 
 ember-cli comes with acceptance test support out of the box. For creating your
 first test, you just need to run `ember generate acceptance-test <name>`. In

@@ -1,7 +1,7 @@
-## Problem
+# Problem
 You want to send data from your Ember application to a server.
 
-## Solution
+# Solution
 Use `jQuery.ajax` and send json serialized Ember objects to the server.
 
-## Discussion
+# Discussion

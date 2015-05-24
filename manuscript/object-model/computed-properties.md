@@ -1,10 +1,10 @@
-## What are Computed Properties?
+# What are Computed Properties?
 
 In a nutshell, computed properties let you declare functions as properties. You create one by defining a computed property as a function, which Ember will automatically call when you ask for the property. You can then use it the same way you would any normal, static property.
 
 It's super handy for taking one or more normal properties and transforming or manipulating their data to create a new value. 
 
-### Computed properties in action
+## Computed properties in action
 
 We'll start with a simple example:
 
@@ -30,7 +30,7 @@ Notice that the `fullName` function calls `property`. This declares the function
 
 Whenever you access the `fullName` property, this function gets called, and it returns the value of the function, which simply calls `firstName` + `lastName`.
 
-#### Alternate invocation
+### Alternate invocation
 
 At this point, you might be wondering how you are able to call the `.property` function on a function.  This is possible because Ember extends the `function` prototype.  More information about extending native prototypes is available in the [disabling prototype extensions guide](configuring-ember/disabling-prototype-extensions/). If you'd like to replicate the declaration from above without using these extensions you could do so with the following:
 
@@ -40,7 +40,7 @@ At this point, you might be wondering how you are able to call the `.property` f
   })
 ```
 
-### Chaining computed properties
+## Chaining computed properties
 
 You can use computed properties as values to create new computed properties. Let's add a `description` computed property to the previous example, and use the existing `fullName` property and add in some other properties:
 
@@ -70,7 +70,7 @@ var captainAmerica = Person.create({
 captainAmerica.get('description'); // "Steve Rogers; Age: 80; Country: USA"
 ```
 
-### Dynamic updating
+## Dynamic updating
 
 Computed properties, by default, observe any changes made to the properties they depend on and are dynamically updated when they're called. Let's use computed properties to dynamically update. 
 
@@ -84,7 +84,7 @@ So this change to `firstName` was observed by `fullName` computed property, whic
 
 Setting any dependent property will propagate changes through any computed properties that depend on them, all the way down the chain of computed properties you've created.
 
-### Setting Computed Properties
+## Setting Computed Properties
 
 You can also define what Ember should do when setting a computed property. If you try to set a computed property, it will be invoked with the key (property name), the value you want to set it to, and the previous value.
 

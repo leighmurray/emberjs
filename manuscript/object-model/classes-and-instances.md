@@ -1,4 +1,4 @@
-### Defining Classes
+## Defining Classes
 
 To define a new Ember _class_, call the `extend()` method on
 `Ember.Object`:
@@ -49,7 +49,7 @@ var yehuda = Soldier.create({
 yehuda.say("Yes"); // alerts "Yehuda Katz says: Yes, sir!"
 ```
 
-### Creating Instances
+## Creating Instances
 
 Once you have defined a class, you can create new _instances_ of that
 class by calling its `create()` method. Any methods, properties and
@@ -90,7 +90,7 @@ PascalCased, while instances are not. So, for example, the variable
 (usually of the `Person` class). You should stick to these naming
 conventions in your Ember applications.
 
-### Initializing Instances
+## Initializing Instances
 
 When a new instance is created, its `init` method is invoked
 automatically. This is the ideal place to do setup required on new
@@ -117,7 +117,7 @@ you call `this._super()`! If you don't, the system may not have an
 opportunity to do important setup work, and you'll see strange behavior
 in your application.
 
-### Accessing Object Properties
+## Accessing Object Properties
 
 When accessing the properties of an object, use the `get`
 and `set` accessor methods:

@@ -9,7 +9,7 @@ To view the list of deprecations, click on the `Deprecations` menu.
 You can see the total number of deprecations next to the `Deprecations` menu.
 You can also see the number of occurrences for each deprecation.
 
-### Ember Cli Deprecation Sources
+## Ember Cli Deprecation Sources
 
 If you are using Ember Cli and have source maps enabled, you can see a
 list of sources for each deprecation. In Chrome and Firefox devtools,
@@ -24,7 +24,7 @@ You can send the entire stack trace of the deprecation message to the
 console by clicking on `Trace in the console`.
 
 
-### Transition Plans
+## Transition Plans
 
 For information on how to remove the deprecation warning,
 click on the "Transition Plan" link to go to a helpful guide on how to
@@ -33,7 +33,7 @@ upgrade on the Ember.js website.
 <img src="images/guides/ember-inspector/deprecations-transition-plan.png" width="680" />
 
 
-### Filtering and Clearing
+## Filtering and Clearing
 
 You can filter the deprecations by typing a query in the search box.
 You can also clear the current deprecations by clicking on the clear icon

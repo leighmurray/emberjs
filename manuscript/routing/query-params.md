@@ -11,7 +11,7 @@ into the URL that can't otherwise fit into the _path_ of the URL (i.e.
 everything to the left of the `?`). Common use cases for query params include
 representing the current page number in a paginated collection, filter criteria, or sorting criteria.
 
-### Specifying Query Parameters
+## Specifying Query Parameters
 
 Query params are declared on route-driven controllers. For example, to
 configure query params that are active within the `articles` route,
@@ -68,7 +68,7 @@ With this code, we have established the following behaviors:
    full router transition (i.e. it won't call `model` hooks and
    `setupController`, etc.); it will only update the URL.
 
-### link-to Helper
+## link-to Helper
 
 The `link-to` helper supports specifying query params using the
 `query-params` subexpression helper.
@@ -92,7 +92,7 @@ is determined by calculating whether the query params end up the same after
 clicking a link. You don't have to supply all of the current,
 active query params for this to be true.
 
-### transitionTo
+## transitionTo
 
 `Route#transitionTo` and `Controller#transitionToRoute`
 accept a final argument, which is an object with the key `queryParams`.
@@ -111,7 +111,7 @@ You can also add query params to URL transitions:
 this.transitionTo("/posts/1?sort=date&showDetails=true");
 ```
 
-### Opting into a full transition
+## Opting into a full transition
 
 Arguments provided to `transitionTo`
 or `link-to` only correspond to a change in query param values,
@@ -155,7 +155,7 @@ export default Ember.ArrayController.extend({
 });
 ```
 
-### Update URL with `replaceState` instead
+## Update URL with `replaceState` instead
 
 By default, Ember will use `pushState` to update the URL in the
 address bar in response to a controller query param property change, but
@@ -178,7 +178,7 @@ Note that the name of this config property and its default value of
 `false` is similar to the `link-to` helper's, which also lets
 you opt into a `replaceState` transition via `replace=true`.
 
-### Map a controller's property to a different query param key
+## Map a controller's property to a different query param key
 
 By default, specifying `foo` as a controller query param property will
 bind to a query param whose key is `foo`, e.g. `?foo=123`. You can also map
@@ -211,7 +211,7 @@ export default Ember.Controller.extend({
 });
 ```
 
-### Default values and deserialization
+## Default values and deserialization
 
 In the following example, the controller query param property `page` is
 considered to have a default value of `1`.
@@ -235,7 +235,7 @@ This affects query param behavior in two ways:
    but once someone sets the controller's `page` value to `2`, the URL
    will become `/articles?page=2`.
 
-### Sticky Query Param Values
+## Sticky Query Param Values
 
 By default, query param values in Ember are "sticky", in that if you
 make changes to a query param and then leave and re-enter the route, the
@@ -323,7 +323,7 @@ export default Ember.Controller.extend({
 });
 ```
 
-## Examples
+# Examples
 
 - [Search queries](http://jsbin.com/tukoye)
 - [Sort: client-side, no refiring of model hook](http://jsbin.com/joboje)

@@ -7,7 +7,7 @@ to the Cookbook. Cookbook recipes assume that you have a basic understanding of 
 If you have experience with Ember and would like to contribute to the Cookbook, the discussion section of each
 recipe is a great place to start.
 
-### Recipes
+## Recipes
 
 1. [Understanding the Cookbook Format](./understanding_the_cookbook_format)
 1. [Participating If You Know Ember](./participating_if_you_know_ember)

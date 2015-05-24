@@ -1,4 +1,4 @@
-## Enumerables
+# Enumerables
 
 In Ember.js, an Enumerable is any object that contains a number of child
 objects, and which allows you to work with those children using the
@@ -49,7 +49,7 @@ array.forEach(function(item) {
 //=> 3 2
 ```
 
-### Enumerables in Ember.js
+## Enumerables in Ember.js
 
 Usually, objects that represent lists implement the Enumerable interface. Some examples:
 
@@ -61,13 +61,13 @@ Usually, objects that represent lists implement the Enumerable interface. Some e
  * **Ember.Set** - A data structure that can efficiently answer whether it
    includes an object.
 
-### API Overview
+## API Overview
 
 In this guide, we'll explore some of the most common Enumerable
 conveniences. For the full list, please see the [Ember.Enumerable API
 reference documentation.](http://emberjs.com/api/classes/Ember.Enumerable.html)
 
-#### Iterating Over an Enumerable
+### Iterating Over an Enumerable
 
 To enumerate all the values of an enumerable object, use the `forEach` method:
 
@@ -83,7 +83,7 @@ food.forEach(function(item, index) {
 // Menu Item 3: Adobo Chicken
 ```
 
-#### Making an Array Copy
+### Making an Array Copy
 
 You can make a native array copy of any object that implements
 `Ember.Enumerable` by calling the `toArray()` method:
@@ -101,7 +101,7 @@ states.toArray()
 Note that in many enumerables, such as the `Ember.Set` used in this
 example, the order of the resulting array is not guaranteed.
 
-#### First and Last Objects
+### First and Last Objects
 
 All Enumerables expose `firstObject` and `lastObject` properties
 that you can bind to.
@@ -118,7 +118,7 @@ animals.get('lastObject');
 //=> "peacock"
 ```
 
-#### Map
+### Map
 
 You can easily transform each item in an enumerable using the
 `map()` method, which creates a new array with results of calling a
@@ -152,7 +152,7 @@ states.mapBy('capital');
 //=> ["Honolulu", "Sacramento"]
 ```
 
-#### Filtering
+### Filtering
 
 Another common task to perform on an Enumerable is to take the
 Enumerable as input, and return an Array after filtering it based on
@@ -192,7 +192,7 @@ todos.filterBy('isDone', true);
 
 If you want to return just the first matched value, rather than an Array containing all of the matched values, you can use `find` and `findBy`, which work just like `filter` and `filterBy`, but return only one item.
 
-#### Aggregate Information (All or Any)
+### Aggregate Information (All or Any)
 
 If you want to find out whether every item in an Enumerable matches some condition, you can use the `every` method:
 

@@ -1,10 +1,10 @@
-### Problem
+## Problem
 You want to add or remove CSS class names to your Ember Components based on properties of the component.
 
-### Solution
+## Solution
 Add property names to the `classNameBindings` property of subclassed components.
 
-### Discussion
+## Discussion
 
 You can apply classes based on properties of the component, or even by properties bound to data passed into the component. This is done by binding the class attribute using `classNameBindings`.
 
@@ -29,7 +29,7 @@ classNameBindings: ['isRelated:relative'],
 isRelatedBinding: "content.isRelated" // value resolves to boolean
 ```
 
-<!--- #### Example
+<!--- ### Example
 
 <a class="jsbin-embed" href="http://jsbin.com/jogizaqepe/2/embed?live">JS Bin</a>
 

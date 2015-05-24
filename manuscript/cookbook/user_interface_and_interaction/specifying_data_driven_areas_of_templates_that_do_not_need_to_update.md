@@ -1,7 +1,7 @@
-### Problem
+## Problem
 You have a section of a template that is based on a data but you don't need the template to update
 
-### Solution
+## Solution
 Use the `{{unbound}}` Handlebars helper.
 
 ```handlebars
@@ -9,7 +9,7 @@ Use the `{{unbound}}` Handlebars helper.
 {{lastName}}
 ```
 
-### Discussion
+## Discussion
 By default all uses of Handlebars helpers in Ember.js will use data bound values that will automatically update
 the section of the template where a property changes after initial rendering.  Ember.Handlebars does this by
 applying the `{{bind}}` helper automatically for you.
@@ -26,6 +26,6 @@ life, you can specify that the property is not bound by applying the `{{unbound}
 that is not bound will avoid adding unnecessary observers on a property.
 
 
-<!---#### Example
+<!---### Example
 
 <a class="jsbin-embed" href="http://jsbin.com/sazomoceza/15/edit?output">JS Bin</a>-->

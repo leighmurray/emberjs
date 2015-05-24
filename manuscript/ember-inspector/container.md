@@ -11,7 +11,7 @@ one type to see the list of all instances created by the container.
 In our case, we are looking at the instantiated controllers.
 
 
-### Inspecting Instances
+## Inspecting Instances
 
 Click on one row to inspect an instance using the object inspector.
 
@@ -20,7 +20,7 @@ Click on one row to inspect an instance using the object inspector.
 To send an instance to the console, click to open the
 object inspector, and then click on `$E` at the top right of the object inspector.
 
-### Filter and Reload
+## Filter and Reload
 
 You can reload the container tab by clicking on the reload icon.
 

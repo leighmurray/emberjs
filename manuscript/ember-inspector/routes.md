@@ -28,7 +28,7 @@ example, `posts/index` will have the url `/posts`.
 As for objects that you have defined, you can click on them to send them to
 the object inspector, or click on the `$E` button next to them to send them to the console.
 
-### Viewing the Current Route
+## Viewing the Current Route
 
 The current route is highlighted in bold. However, as your routes grow in
 number, it can be quite crowded, and harder to find the current route just by looking at the

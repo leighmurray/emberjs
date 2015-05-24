@@ -53,13 +53,13 @@ ENV = {
 }
 ```
 
-### Life Without Prototype Extension
+## Life Without Prototype Extension
 
 In order for your application to behave correctly, you will need to
 manually extend or create the objects that the native objects were
 creating before.
 
-#### Arrays
+### Arrays
 
 Native arrays will no longer implement the functionality needed to
 observe them. If you disable prototype extension and attempt to use
@@ -87,7 +87,7 @@ islands.contains('Oahu');
 //=> true
 ```
 
-#### Strings
+### Strings
 
 Strings will no longer have the convenience methods described in the
 [Ember.String API reference.](http://emberjs.com/api/classes/Ember.String.html). Instead,
@@ -102,7 +102,7 @@ Ember.String.camelize("my_cool_class");
 //=> "myCoolClass"
 ```
 
-#### Functions
+### Functions
 
 To annotate computed properties, use the `Ember.computed()` method to
 wrap the function:

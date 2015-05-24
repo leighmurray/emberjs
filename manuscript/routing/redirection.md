@@ -1,4 +1,4 @@
-### Transitioning and Redirecting
+## Transitioning and Redirecting
 
 Calling `transitionTo` from a route or `transitionToRoute` from a controller
 will stop any transition currently in progress and start a new one, functioning
@@ -10,7 +10,7 @@ will always run.
 * If the new route has dynamic segments, you need to pass either a _model_ or an _identifier_ for each segment.
 Passing a model will skip that segment's `model` hook.  Passing an identifier will run the `model` hook and you'll be able to access the identifier in the params. See [Links](templates/links) for more detail.
 
-### Before the model is known
+## Before the model is known
 
 If you want to redirect from one route to another, you can do the transition in
 the `beforeModel` hook of your route handler.
@@ -29,7 +29,7 @@ export default Ember.Route.extend({
 });
 ```
 
-### After the model is known
+## After the model is known
 
 If you need information about the current model in order to decide about
 redirection, you should either use the `afterModel` or the `redirect` hook.
@@ -58,7 +58,7 @@ When transitioning to the `posts` route if it turns out that there is only one p
 the current transition will be aborted in favor of redirecting to the `PostRoute`
 with the single post object being its model.
 
-### Based on other application state
+## Based on other application state
 
 You can conditionally transition based on some other application state.
 

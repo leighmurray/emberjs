@@ -1,6 +1,6 @@
 So far, we've discussed writing templates for a single view. However, as your application grows, you will often want to create a hierarchy of views to encapsulate different areas on the page. Each view is responsible for handling events and maintaining the properties needed to display it.
 
-### {{view}}
+## {{view}}
 
 To add a child view to a parent, use the `{{view}}` helper.
 The `{{view}}` helper takes a string used to look up the view class.
@@ -42,7 +42,7 @@ User: Albert Hofmann
 </div>
 ```
 
-### Setting Child View Templates
+## Setting Child View Templates
 
 If you'd like to specify the template your child views use inline in
 the main template, you can use the block form of the `{{view}}` helper.

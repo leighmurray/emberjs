@@ -4,7 +4,7 @@ in [Unit Testing Basics] because Ember.Controller extends Ember.Object._
 Unit testing controllers is very simple using the unit test helper which is part
 of the ember-qunit framework.
 
-### Testing Controller Actions
+## Testing Controller Actions
 
 Here we have a controller `PostsController` with some computed properties and an
 action `setProps`.
@@ -66,7 +66,7 @@ test('calling the action setProps updates props A and B', function(assert) {
 });
 ```
 
-### Testing Controller Needs
+## Testing Controller Needs
 
 Sometimes controllers have dependencies on other controllers. This is
 accomplished by using [needs]. For example, here are two simple controllers. The

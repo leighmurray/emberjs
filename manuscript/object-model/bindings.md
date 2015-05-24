@@ -32,7 +32,7 @@ application code has finished running before synchronizing changes, so you can
 change a bound property as many times as you'd like without worrying about the
 overhead of syncing bindings when values are transient.
 
-## One-Way Bindings
+# One-Way Bindings
 
 A one-way binding only propagates changes in one direction. Often, one-way
 bindings are just a performance optimization and you can safely use a two-way binding

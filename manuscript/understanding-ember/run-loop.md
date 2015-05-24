@@ -4,7 +4,7 @@ batch, and order (or reorder) work in a way that is most effective and efficient
 It does so by scheduling work on specific queues. These queues have a priority,
 and are processed to completion in priority order.
 
-## Why is this useful?
+# Why is this useful?
 
 Very often, batching similar work has benefits. Web browsers do something quite similar
 by batching changes to the DOM.
@@ -104,7 +104,7 @@ It is of course possible to optimize these scenarios on a case-by-case basis,
 but getting them for free is much nicer. Using the run loop, we can apply these
 classes of optimizations not only for each scenario, but holistically app-wide.
 
-## How does the Run Loop work in Ember?
+# How does the Run Loop work in Ember?
 
 As mentioned earlier, we schedule work (in the form of function invocations) on
 queues, and these queues are processed to completion in priority order.
@@ -118,7 +118,7 @@ Ember.run.queues
 
 Because the priority is first to last, the "sync" queue has higher priority than the "render" or "destroy" queue.
 
-## What happens in these queues?
+# What happens in these queues?
 
 * The `sync` queue contains binding synchronization jobs
 * The `actions` queue is the general work queue and will typically contain scheduled tasks e.g. promises
@@ -127,7 +127,7 @@ Because the priority is first to last, the "sync" queue has higher priority than
 * The `afterRender` contains jobs meant to be run after all previously scheduled render tasks are complete. This is often good for 3rd-party DOM manipulation libraries, that should only be run after an entire tree of DOM has been updated
 * The `destroy` queue contains jobs to finish the teardown of objects other jobs have scheduled to destroy
 
-## In what order are jobs executed on the queues?
+# In what order are jobs executed on the queues?
 The algorithm works this way:
 
 1. Let the highest priority queue with pending jobs be: `CURRENT_QUEUE`, if there are no queues with pending jobs the run loop is complete
@@ -136,7 +136,7 @@ The algorithm works this way:
 4. Process all the jobs sequentially in `WORK_QUEUE`
 5. Return to Step 1
 
-## An example of the internals
+# An example of the internals
 
 Rather than writing the higher level app code that internally invokes the various
 run loop scheduling functions, we have stripped away the covers, and shown the raw run-loop interactions.
@@ -147,20 +147,20 @@ help you to understand the run-loops algorithm, which will make you a better Emb
 
 <iframe src="http://emberjs.com.s3.amazonaws.com/run-loop-guide/index.html" width="678" height="410" style="border:1px solid rgb(170, 170, 170);margin-bottom:1.5em;"></iframe>
 
-## FAQs
+# FAQs
 
 
-#### What do I need to know to get started with Ember?
+### What do I need to know to get started with Ember?
 
 For basic Ember app development scenarios, nothing. All common paths are paved nicely
 for you and don't require working with the run loop directly.
 
-#### What do I need to know to actually build an app?
+### What do I need to know to actually build an app?
 
 It is possible to build good apps without working with the run loop directly, so if
 you don't feel the need to do so, don't.
 
-#### What scenarios will require me to understand the run loop?
+### What scenarios will require me to understand the run loop?
 
 The most common case you will run into is integrating with a non-Ember API
 that includes some sort of asynchronous callback. For example:
@@ -173,7 +173,7 @@ that includes some sort of asynchronous callback. For example:
 
 You should begin a run loop when the callback fires.
 
-#### How do I tell Ember to start a run loop?
+### How do I tell Ember to start a run loop?
 
 ```javascript
 $('a').click(function(){
@@ -183,7 +183,7 @@ $('a').click(function(){
 });
 ```
 
-#### What happens if I forget to start a run loop in an async handler?
+### What happens if I forget to start a run loop in an async handler?
 
 As mentioned above, you should wrap any non-Ember async callbacks in
 `Ember.run`. If you don't, Ember will try to approximate a beginning and end for you.
@@ -253,7 +253,7 @@ should be minimized.
 Relying on autoruns is not a rigorous or efficient way to use the runloop.
 Wrapping event handlers manually is preferred.
 
-#### How is runloop behaviour different when testing?
+### How is runloop behaviour different when testing?
 
 When your application is in _testing mode_ then
 Ember will throw an error if you try to schedule work without an available

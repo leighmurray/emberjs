@@ -1,7 +1,7 @@
-## Problem
+# Problem
 You want to load data from a server and have it available in your Ember application for observation and manipulation.
 
-## Solution
+# Solution
 Use `jQuery.ajax` and convert the response into Ember observable objects. You use `reopen` to add a finder method to your model class. The general workflow of the finder method is the following:
 
 1. You create an empty result object.
@@ -42,7 +42,7 @@ App.User.reopenClass({
 ```
 
 
-## Discussion
+# Discussion
 Alternatively you could also return a promise (`Ember.Deferred`) with your finder methods. The code for this approach could look like the following:
 
 ```javascript
@@ -81,6 +81,6 @@ App.User.reopenClass({
 });
 ```
 
-#### Example
+### Example
 
 <a class="jsbin-embed" href="http://jsbin.com/UGuciwo/3/embed?js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>

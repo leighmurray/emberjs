@@ -1,7 +1,7 @@
 Many Ember concepts, like bindings and computed properties, are designed
 to help manage asynchronous behavior.
 
-### Without Ember
+## Without Ember
 
 We'll start by taking a look at ways to manage asynchronous behavior
 using jQuery or event-based MVC frameworks.
@@ -66,7 +66,7 @@ jQuery, but its approach is typical of event-driven MVC frameworks. It
 helps organize the asynchronous events, but asynchronous behavior is
 still the core programming model.
 
-### Ember's Approach
+## Ember's Approach
 
 In general, Ember's goal is to eliminate explicit forms of asynchronous
 behavior. As we'll see later, this gives Ember the ability to coalesce
@@ -141,7 +141,7 @@ Instead, Ember's binding system automatically follows the trail from the
 `salutation` and `name` set in the `getJSON` callback to the computed
 property in the `PostController` and all the way into the DOM.
 
-### Benefits
+## Benefits
 
 Because Ember is usually responsible for propagating changes, it can
 guarantee that a single change is only propagated one time in response
@@ -205,7 +205,7 @@ system. The fact that side effects don't propagate immediately in Ember
 eliminates the temptation to cheat and accidentally couple code together
 that should be separate.
 
-### Side-Effect Callbacks
+## Side-Effect Callbacks
 
 Since you can't rely on synchronous side-effects, you may be wondering
 how to make sure that certain actions happen at the right time.
@@ -264,7 +264,7 @@ This also means that all of the code for working with the DOM is in a
 few sanctioned parts of your application, so Ember has more freedom in
 the parts of the render process outside of these callbacks.
 
-### Routing
+## Routing
 
 There's an entire page dedicated to managing async within the Ember
 Router: [Asynchronous Routing](routing/asynchronous-routing)

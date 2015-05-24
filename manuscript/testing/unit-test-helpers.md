@@ -2,7 +2,7 @@
 alias: guides/testing/unit/
 ---
 
-### Globals vs Modules
+## Globals vs Modules
 
 In the past, it has been difficult to test portions of your Ember application
 without loading the entire app as a global. By having your application written
@@ -10,7 +10,7 @@ using modules ([CommonJS], [AMD], etc), you are able to require just code that
 is to be tested without having to pluck the pieces out of your global
 application.
 
-### Unit Testing Helpers
+## Unit Testing Helpers
 
 [Ember-QUnit] is the default *unit* testing helper suite for Ember. It can and
 should be used as a template for other test framework helpers. It uses your
@@ -31,7 +31,7 @@ writer of the test.
 ***The unit testing section of this guide will use the Ember-QUnit library, but
 the concepts and examples should translate easily to other frameworks.***
 
-### Available Helpers
+## Available Helpers
 
 By including [Ember-QUnit], you will have access to a number of test helpers.
 
@@ -63,7 +63,7 @@ By including [Ember-QUnit], you will have access to a number of test helpers.
  - Sets the resolver which will be used to lookup objects from the application
    container.
 
-### Unit Testing Setup
+## Unit Testing Setup
 
 In order to unit test your Ember application, you need to let Ember know it is in
 test mode. To do so, you must call `Ember.setupForTesting()`.
@@ -81,7 +81,7 @@ run "visit" to get to a particular URL, you can be sure the URL has been visited
 and that's the only behaviour that has transpired. If we didn't use this mode,
 our assertions would most likely be executed before the async behaviour had taken place, so our assertion results would be unpredictable.
 
-### The Resolver
+## The Resolver
 
 The Ember resolver plays a huge role when unit testing your application. It
 provides the lookup functionality based on name, such as `route:index` or

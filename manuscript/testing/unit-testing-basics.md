@@ -9,7 +9,7 @@ is as simple as creating an instance of the object, setting its state, and
 running assertions against the object. By way of example lets look at a few
 common cases.
 
-### Testing Computed Properties
+## Testing Computed Properties
 
 Let's start by looking at an object that has a `computedFoo` computed property
 based on a `foo` property.
@@ -45,7 +45,7 @@ test('computedFoo correctly concats foo', function(assert) {
 See that we have used `moduleFor` one of the several [unit-test helpers](unit-test-helpers) provided
 by Ember-Qunit.
 
-### Testing Object Methods
+## Testing Object Methods
 
 Next let's look at testing logic found within an object's method. In this case
 the `testMethod` method alters some internal state of the object (by updating
@@ -106,7 +106,7 @@ test('calc returns incremented count', function(assert) {
 });
 ```
 
-### Testing Observers
+## Testing Observers
 
 Suppose we have an object that has a property and a method observing that property.
 

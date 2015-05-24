@@ -62,14 +62,14 @@ is a specialized version of the `RESTAdapter` that is set up to work
 out of the box with Rails-style REST APIs.
 
 
-## Customizing the RESTAdapter
+# Customizing the RESTAdapter
 
 The [DS.RESTAdapter](http://emberjs.com/api/data/classes/DS.RESTAdapter.html) is the
 most commonly extended adapter that ships with Ember Data. It has a
 handful of hooks that are commonly used to extend it to work with
 non-standard backends.
 
-#### Endpoint Path Customization
+### Endpoint Path Customization
 
 The `namespace` property can be used to prefix requests with a
 specific url namespace.
@@ -83,7 +83,7 @@ export default DS.RESTAdapter.extend({
 Requests for `person` would now target `http://emberjs.com/api/1/people/1`.
 
 
-#### Host Customization
+### Host Customization
 
 By default the adapter will target the current domain. If you would
 like to specify a new domain you can do so by setting the `host`
@@ -98,7 +98,7 @@ export default DS.RESTAdapter.extend({
 Requests for `person` would now target `https://api.example.com/people/1`.
 
 
-#### Path Customization
+### Path Customization
 
 By default the `RESTAdapter` will attempt to pluralize and camelCase
 the model name to generate the path name. If this convention does not
@@ -119,7 +119,7 @@ export default DS.RESTAdapter.extend({
 Requests for `person` would now target `/person/1`.
 Requests for `userProfile` would now target `/user_profile/1`.
 
-#### Authoring Adapters
+### Authoring Adapters
 
 The `defaultSerializer` property can be used to specify the serializer
 that will be used by this adapter. This is only used when a model
@@ -138,7 +138,7 @@ export default DS.RESTAdapter.extend({
 ```
 
 
-## Community Adapters
+# Community Adapters
 
 If none of the builtin Ember Data Adapters work for your backend,
 be sure to check out some of the community maintained Ember Data

@@ -118,7 +118,7 @@ the name you pass to `this.route`.
   </tr>
 </table>
 
-### Nested Routes
+## Nested Routes
 
 You can define nested routes by passing a callback to `this.route`:
 
@@ -199,11 +199,11 @@ Visiting `/posts` is slightly different. It will first render the
 Finally, visiting `/posts/new` will first render the `posts` template,
 then render the `posts/new` template into its outlet.
 
-### Multi-word Model Names
+## Multi-word Model Names
 
 For multi-word models all the names are camel cased except for the dynamic segment. For example, a model named `BigMac` would have a resource path of `/bigMacs/:big_mac_id`, route named `bigMac`, template named `bigMac`.
 
-### Dynamic Segments
+## Dynamic Segments
 
 One of the responsibilities of a route handler is to convert a URL
 into a model.
@@ -274,7 +274,7 @@ export default Ember.Route.extend({
 The default `serialize` method inserts the model's `id` into the route's
 dynamic segment (in this case, `:post_id`).
 
-### Initial routes
+## Initial routes
 
 A few routes are immediately available within your application:
 
@@ -288,7 +288,7 @@ A few routes are immediately available within your application:
 These routes are part of every application, so you don't need to
 specify them in your `app/router.js`.
 
-### Wildcard / globbing routes
+## Wildcard / globbing routes
 
 You can define wildcard routes that will match multiple routes. This could be used, for example,
 if you'd like a catch-all route which is useful when the user enters an incorrect URL not managed

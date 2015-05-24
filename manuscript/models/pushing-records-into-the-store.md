@@ -17,7 +17,7 @@ Another use case for pushing in records is if your application has a
 streaming connection to a backend. If a record is created or modified,
 you want to update the UI immediately.
 
-### Pushing Records
+## Pushing Records
 
 To push a record into the store, call the store's `push()` method.
 

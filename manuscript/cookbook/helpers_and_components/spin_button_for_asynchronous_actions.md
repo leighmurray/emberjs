@@ -1,7 +1,7 @@
-### Problem
+## Problem
 You want a button component that spins to show asynchronous action till completion. Eg- Save Button.
 
-### Solution
+## Solution
 Write an Ember Component to change to loading state when action is taking place.
 
 For example a button to save data could be as
@@ -54,12 +54,12 @@ export default Ember.Component.extend({
 });
 ```
 
-### Discussion
+## Discussion
 
 I have dumbed down the sample code to only change text within the button. One may add a loading image inside the button or change the button to a div styled like a button.
 The component is in charge of setting isLoading = true and the base controller performing asynchronous action decides when the 'isLoading' becomes false again.
 For safety and sanity of the component, one can add a settimeout of however much time and then set 'isLoading' back to false so that the components comes to initial state no matter the result of the asynchronous call. But I would prefer it was properly handled in the parent controller.
 Also note that the component does not let multiple clicks get in the way of loading status.
 
-<!---#### Example
+<!---### Example
 <a class="jsbin-embed" href="http://jsbin.com/patikodeje/7/embed?live">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>-->

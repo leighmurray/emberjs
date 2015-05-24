@@ -22,7 +22,7 @@ Person.sync = {
 export default Person
 ```
 
-### Finding Records
+## Finding Records
 
 When you use the `find` method on a model in your application, Ember
 Data will invoke the `find` hook on your model's `sync` object.
@@ -94,7 +94,7 @@ You can modify the JSON before passing it to `process`. The `munge`
 API is provided to make it easier to compose with other methods on
 the `process` wrapper.
 
-### Querying for Multiple Records
+## Querying for Multiple Records
 
 When you use the `query` method on a model, Ember Data will invoke
 the `query` hook on your model's `sync` object.

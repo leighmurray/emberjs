@@ -12,7 +12,7 @@ You can customize what type of element Ember generates for your
 component, including its attributes and class names, by creating a
 subclass of `Ember.Component` in your JavaScript.
 
-### Customizing the Element
+## Customizing the Element
 
 To use a tag other than `div`, subclass `Ember.Component` and assign it
 a `tagName` property. This property can be any valid HTML5 tag name as a
@@ -31,7 +31,7 @@ export default Ember.Component.extend({
 </ul>
 ```
 
-### Customizing Class Names
+## Customizing Class Names
 
 You can also specify which class names are applied to the component's
 element by setting its `classNames` property to an array of strings:
@@ -130,7 +130,7 @@ This would render this HTML:
 <div class="ember-view highestPriority">
 ```
 
-### Customizing Attributes
+## Customizing Attributes
 
 You can bind attributes to the DOM element that represents a component
 by using `attributeBindings`:

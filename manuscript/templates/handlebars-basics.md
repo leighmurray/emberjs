@@ -9,13 +9,13 @@ describing the user interface of your app. And, once you've told
 Ember.js to render a given template on the screen, you don't need to
 write any additional code to make sure it keeps up-to-date.
 
-### Defining Templates
+## Defining Templates
 
 By default, adjust your [application template](the-application-template), that is created automatically for you and will be displayed on the page when your app loads.
 
 You can also define templates by name that can be used later. If you would like to create a template that is shared across many areas of your site, you should investigate [components](components/defining-a-component/). The components section contains information on creating re-usable templates.
 
-### Handlebars Expressions
+## Handlebars Expressions
 
 Each template has an associated _controller_: this is where the template
 finds the properties that it displays.

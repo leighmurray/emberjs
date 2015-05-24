@@ -1,4 +1,4 @@
-## The `{{link-to}}` Helper
+# The `{{link-to}}` Helper
 
 You create a link to a route using the `{{link-to}}` helper.
 
@@ -58,7 +58,7 @@ the first example above would render as:
 </ul>
 ```
 
-### Example for Multiple Segments
+## Example for Multiple Segments
 
 If the route is nested, you can supply a model or an identifier for each dynamic
 segment.
@@ -99,7 +99,7 @@ In the above example, the model hook for `PhotoRoute` will run with `params.phot
 `CommentRoute` _won't_ run since you supplied a model object for the `comment` segment. The comment's id will
 populate the url according to `CommentRoute`'s `serialize` hook.
 
-### Using link-to as an inline helper
+## Using link-to as an inline helper
 
 In addition to being used as a block expression, the `link-to` helper
 can also be used in inline form by specifying the link text as the first
@@ -117,7 +117,7 @@ A link in <a href='/'>Block Expression Form</a>,
 and a link in <a href='/'>Inline Form</a>.
 ```
 
-### Adding additional attributes on a link
+## Adding additional attributes on a link
 
 When generating a link you might want to set additional attributes for it. You can do this with additional
 arguments to the `link-to` helper:
@@ -131,7 +131,7 @@ arguments to the `link-to` helper:
 Many of the common HTML properties you would want to use like `class`, and `rel` will work. When
 adding class names, Ember will also apply the standard `ember-view` and possibly `active` class names.
 
-### Replacing history entries
+## Replacing history entries
 
 The default behavior for `link-to` is to add entries to the browser's history
 when transitioning between the routes. However, to replace the current entry in

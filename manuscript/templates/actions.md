@@ -1,4 +1,4 @@
-## The `{{action}}` Helper
+# The `{{action}}` Helper
 
 Your app will often need a way to let users interact with controls that
 change application state. For example, imagine that you have a template
@@ -56,7 +56,7 @@ For example:
 ```
 
 
-### Action Bubbling
+## Action Bubbling
 
 By default, the `{{action}}` helper triggers a method on the template's
 controller, as illustrated above.
@@ -126,7 +126,7 @@ button in a sidebar that does one thing if you are somewhere inside of
 the `/posts` route, and another thing if you are inside of the `/about`
 route.
 
-### Action Parameters
+## Action Parameters
 
 You can optionally pass arguments to the action handler. Any values
 passed to the `{{action}}` helper after the action name will be passed to
@@ -151,7 +151,7 @@ export default Ember.Controller.extend({
 });
 ```
 
-### Specifying the Type of Event
+## Specifying the Type of Event
 
 By default, the `{{action}}` helper listens for click events and triggers
 the action when the user clicks on the element.
@@ -170,7 +170,7 @@ In general, two-word event names (like `keypress`) become `keyPress`.
 
 [1]: http://emberjs.com/api/classes/Ember.View.html#toc_event-names
 
-### Specifying Whitelisted Modifier Keys
+## Specifying Whitelisted Modifier Keys
 
 By default the `{{action}}` helper will ignore click events with
 pressed modifier keys. You can supply an `allowedKeys` option
@@ -185,7 +185,7 @@ to specify which keys should not be ignored.
 This way the `{{action}}` will fire when clicking with the alt key
 pressed down.
 
-### Stopping Event Propagation
+## Stopping Event Propagation
 
 By default, the `{{action}}` helper allows events it handles to bubble
 up to parent DOM nodes. If you want to stop propagation, you can disable
@@ -209,7 +209,7 @@ to the link.
 With `bubbles=false`, Ember.js will stop the browser from propagating
 the event.
 
-### Specifying a Target
+## Specifying a Target
 
 By default, the `{{action}}` helper will send the action to the view's
 target, which is generally the view's controller. (Note: in the case of

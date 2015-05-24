@@ -45,7 +45,7 @@ The table below shows how model names map to model file paths.
   </tr>
 </table>
 
-### Defining Attributes
+## Defining Attributes
 
 You can specify which attributes a model has by using `DS.attr`.
 
@@ -99,7 +99,7 @@ attribute types, and new types can be registered as transforms. See the
 
 [ISO 8601]: http://en.wikipedia.org/wiki/ISO_8601
 
-#### Options
+### Options
 
 `DS.attr` takes an optional hash as a second parameter:
 
@@ -120,12 +120,12 @@ attribute types, and new types can be registered as transforms. See the
   ```
 
 
-### Defining Relationships
+## Defining Relationships
 
 Ember Data includes several built-in relationship types to help you
 define how your models relate to each other.
 
-#### One-to-One
+### One-to-One
 
 To declare a one-to-one relationship between two models, use
 `DS.belongsTo`:
@@ -142,7 +142,7 @@ export default DS.Model.extend({
 });
 ```
 
-#### One-to-Many
+### One-to-Many
 
 To declare a one-to-many relationship between two models, use
 `DS.belongsTo` in combination with `DS.hasMany`, like this:
@@ -159,7 +159,7 @@ export default DS.Model.extend({
 });
 ```
 
-#### Many-to-Many
+### Many-to-Many
 
 To declare a many-to-many relationship between two models, use
 `DS.hasMany`:
@@ -176,7 +176,7 @@ export default DS.Model.extend({
 });
 ```
 
-#### Explicit Inverses
+### Explicit Inverses
 
 Ember Data will do its best to discover which relationships map to one
 another. In the one-to-many code above, for example, Ember Data can figure out that
@@ -207,7 +207,7 @@ export default DS.Model.extend({
 
 You can also specify an inverse on a `belongsTo`, which works how you'd expect.
 
-#### Reflexive relation
+### Reflexive relation
 
 When you want to define a reflexive relation, you must either explicitly define
 the other side, and set the explicit inverse accordingly, and if you don't need the

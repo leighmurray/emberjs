@@ -1,11 +1,11 @@
-### Problem
+## Problem
 You want to show part of your UI in a modal dialog.
 
-### Solution
+## Solution
 Render a specific controller into a named `modal` outlet in your application
 template.
 
-### Discussion
+## Discussion
 You can use a route's `render` method to render a specific controller and
 template into a named outlet. In this case we can setup our application template
 to handle the main outlet and a modal outlet:
@@ -55,7 +55,7 @@ It may also be helpful to use a `modal-dialog` component to handle common markup
 and interactions such as rendering an overlay and handling clicks outside of the
 modal.
 
-<!---#### Example
+<!---### Example
 
 This example shows:
 

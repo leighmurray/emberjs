@@ -1,10 +1,10 @@
-## Problem
+# Problem
 
 You want to validate your form text fields. The validation should only
 apply when the user focused out of the input (so that a blank form won't
 be all-red until user focuses each field).
 
-## Solution
+# Solution
 
 Create a new component and define a `focusOut` hook, which will record
 that the field has been focused, and add a computed property named
@@ -43,7 +43,7 @@ The use like this:
 {{validated-input value=name valid=nameValid placeholder="Name" type="text" input-class="form-control"}}
 ```
 
-## Discussion
+# Discussion
 
 Essentially, what we need to achieve is to have a component which wraps
 the input field with a div that has the `has-error` class if the
@@ -60,6 +60,6 @@ It renders a wrapped input field. The wrapper has the `has-error` class
 if `hasError` property of the component is true. It's true only when
 the validation fails and the field has been focused at.
 
-<!---#### Example
+<!---### Example
 
 <a class="jsbin-embed" href="http://jsbin.com/UpaXeta/3/embed?live">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script> -->

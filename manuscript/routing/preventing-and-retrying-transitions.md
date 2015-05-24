@@ -5,7 +5,7 @@ to immediately abort the transition by calling `transition.abort()`,
 and if the transition object is stored, it can be re-attempted at a
 later time by calling `transition.retry()`.
 
-### Preventing Transitions via `willTransition`
+## Preventing Transitions via `willTransition`
 
 When a transition is attempted, whether via `{{link-to}}`, `transitionTo`,
 or a URL change, a `willTransition` action is fired on the currently
@@ -44,7 +44,7 @@ new URL will be navigated to before the `willTransition` action is
 called. This will result in the browser displaying the new URL, even if
 `willTransition` calls `transition.abort()`.
 
-### Aborting Transitions Within `model`, `beforeModel`, `afterModel`
+## Aborting Transitions Within `model`, `beforeModel`, `afterModel`
 
 The `model`, `beforeModel`, and `afterModel` hooks described in
 [Asynchronous Routing](asynchronous-routing)
@@ -62,7 +62,7 @@ export default Ember.Route.extend({
 });
 ```
 
-### Storing and Retrying a Transition
+## Storing and Retrying a Transition
 
 Aborted transitions can be retried at a later time. A common use case
 for this is having an authenticated route redirect the user to a login

@@ -3,7 +3,7 @@ to develop against. The FixtureAdapter allows you to begin developing Ember.js
 apps now, and switch to another adapter when your API is ready to consume
 without any changes to your application code.
 
-### Getting Started
+## Getting Started
 
 Using the fixture adapter entails three very simple setup steps:
 
@@ -11,7 +11,7 @@ Using the fixture adapter entails three very simple setup steps:
 2. Define your model using `DS.Model.extend`.
 3. Attach fixtures (also known as sample data) to the model's class.
 
-#### Creating a Fixture Adapter
+### Creating a Fixture Adapter
 
 Simply set the default adapter of your `Ember.Application` to be a `FixtureAdapter` by creating `app/adapters/application.js` and inserting the following:
 
@@ -20,7 +20,7 @@ import DS from 'ember-data';
 export default DS.FixtureAdapter.extend();
 ```
 
-#### Define Your Model
+### Define Your Model
 
 You should refer to [Defining a Model][1] for a more in-depth guide on using
 Ember Data Models, but for the purposes of demonstration we'll use an example
@@ -33,7 +33,7 @@ export default DS.Model.extend({
 });
 ```
 
-#### Attach Fixtures to the Model Class
+### Attach Fixtures to the Model Class
 
 In order to attach fixtures to your model, you have to use `reopenClass` method and define
 fixtures:
@@ -66,7 +66,7 @@ export default Ember.Route.extend({
 });
 ```
 
-#### Naming Conventions
+### Naming Conventions
 
 Unlike the [REST Adapter][3], the Fixture Adapter does not make any assumptions
 about the naming conventions of your model. As you saw in the example above,

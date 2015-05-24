@@ -29,7 +29,7 @@ If the `name` property on the current context changes, Ember.js will
 automatically execute the helper again and update the DOM with the new
 value.
 
-### Dependencies
+## Dependencies
 
 Imagine you want to render the full name of a `Person`. In this
 case, you will want to update the output if the person itself changes,
@@ -53,7 +53,7 @@ _dependent keys_ change, the output will automatically update.
 Both the path passed to the `fullName` helper and its dependent keys may
 be full _property paths_ (e.g. `person.address.country`).
 
-### Custom View Helpers
+## Custom View Helpers
 
 You may also find yourself rendering your view classes in multiple
 places using the `{{view}}` helper. In this case, you can save yourself

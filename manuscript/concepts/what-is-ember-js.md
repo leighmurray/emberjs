@@ -1,4 +1,4 @@
-## What is Ember.js?
+# What is Ember.js?
 
 Ember.js is a JavaScript framework for creating ambitious web
 applications. It helps you:
@@ -7,9 +7,9 @@ applications. It helps you:
 2. Retrieve models, with rich relationships, from your server.
 3. Conventional app structure helps your app grow without messy code.
 
-### Enhancing JavaScript
+## Enhancing JavaScript
 
-### Eliminating Boilerplate
+## Eliminating Boilerplate
 
 There are some things that every web app developer has to do. For
 example, everyone has written code that loads data from a server,
@@ -46,7 +46,7 @@ see how Ember.js allows you to forget about stuff that you'd have to
 handle manually in other frameworks—from data persistence to memory
 management.
 
-### Application Architecture
+## Application Architecture
 
 Since web applications evolved from web pages, which were nothing more
 than static documents, the primitive APIs supplied by the browser give
@@ -60,7 +60,7 @@ We also supply built-in support for state management, so you'll have
 a way to describe how your application moves through various nested states
 (like signed-out, signed-in, viewing-post, and viewing-comment) out of the box.
 
-### Ember.js at a Glance
+## Ember.js at a Glance
 
 These are the three features that make Ember a joy to use:
 
@@ -68,7 +68,7 @@ These are the three features that make Ember a joy to use:
 2. Computed properties
 3. Auto-updating templates
 
-#### Bindings
+### Bindings
 
 Use bindings to keep properties between two different objects in sync. You just
 declare a binding once, and Ember will make sure changes get propagated in either
@@ -95,7 +95,7 @@ MyApp.country.get('presidentName');
 Bindings allow you to architect your application using the MVC (Model-View-Controller)
 pattern, then rest easy knowing that data will always flow correctly from layer to layer.
 
-#### Computed Properties
+### Computed Properties
 
 Computed properties allow you to treat a function like a property:
 
@@ -139,7 +139,7 @@ var president = Ember.Object.create({
 Make sure you list these dependencies so Ember knows when to update bindings that connect
 to a computed property.
 
-#### Auto-updating Templates
+### Auto-updating Templates
 
 Ember uses Handlebars, a semantic templating library:
 
@@ -158,7 +158,7 @@ takes care of the rest. It doesn't matter how the underlying data changes, wheth
 or the user performing an action; your user interface always stays up-to-date. This eliminates entire
 categories of edge cases that developers struggle with every day.
 
-### Differences from Server-Side MVC
+## Differences from Server-Side MVC
 
 A common misconception about Ember.js's MVC implementation is that it must be similar to that of Ruby on Rails. This is incorrect.
 

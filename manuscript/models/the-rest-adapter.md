@@ -5,7 +5,7 @@ associated with each model are conventional; this means that, if you
 follow the rules, you will not need to configure the adapter or write
 any code in order to get started.
 
-### URL Conventions
+## URL Conventions
 
 The REST adapter is smart enough to determine the URLs it communicates
 with based on the name of the model. For example, if you ask for a
@@ -34,7 +34,7 @@ REST adapter:
   </tbody>
 </table>
 
-#### Pluralization Customization
+### Pluralization Customization
 
 Irregular or uncountable pluralizations can be specified via `Ember.Inflector.inflector`:
 
@@ -48,7 +48,7 @@ inflector.uncountable('advice');
 This will tell the REST adapter that requests for `formula`
 should go to `/formulae/1` instead of `/formulas/1`.
 
-#### Endpoint Path Customization
+### Endpoint Path Customization
 
 Endpoint paths can be prefixed with a namespace by setting the `namespace`
 property on the adapter:
@@ -61,7 +61,7 @@ export default DS.RESTAdapter.extend({
 
 Requests for `person` would now target `http://emberjs.com/api/1/people/1`.
 
-#### Host Customization
+### Host Customization
 
 An adapter can target other hosts by setting the `host` property.
 
@@ -73,13 +73,13 @@ export default DS.RESTAdapter.extend({
 
 Requests for `person` would now target `https://api.example.com/people/1`.
 
-### JSON Conventions
+## JSON Conventions
 
 When requesting a record, the REST adapter expects your server to return
 a JSON representation of the record that conforms to the following
 conventions.
 
-#### JSON Root
+### JSON Root
 
 The primary record being returned should be in a named root. For
 example, if you request a record from `/people/123`, the response should
@@ -107,7 +107,7 @@ extractDeleteRecord: function(store, type, payload) {
 }
 ```
 
-#### Attribute Names
+### Attribute Names
 
 Attribute names should be camelized.  For example, if you have a model like this:
 
@@ -156,7 +156,7 @@ export default DS.RESTSerializer.extend({
 });
 ```
 
-#### Relationships
+### Relationships
 
 References to other records should be done by ID. For example, if you
 have a model with a `hasMany` relationship:
@@ -211,7 +211,7 @@ export default DS.RESTSerializer.extend({
 });
 ```
 
-#### Sideloaded Relationships
+### Sideloaded Relationships
 
 To reduce the number of HTTP requests necessary, you can sideload
 additional records in your JSON response. Sideloaded records live
@@ -240,7 +240,7 @@ outside the JSON root, and are represented as an array of hashes:
 }
 ```
 
-### Creating Custom Transformations
+## Creating Custom Transformations
 
 In some circumstances, the built in attribute types of `string`,
 `number`, `boolean`, and `date` may be inadequate. For example, a

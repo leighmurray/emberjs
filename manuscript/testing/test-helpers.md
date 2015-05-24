@@ -195,9 +195,9 @@ will be registered then.
 
 ```tests/helpers/start-app.js
 import Ember from 'ember';
-import Application from '../../app';
-import Router from '../../router';
-import config from '../../config/environment';
+import Application from 'app';
+import Router from 'router';
+import config from 'config/environment';
 import shouldHaveElementWithCount from "./should-have-element-with-count";
 import dblclick from "./dblclick";
 import addContact from "./add-contact";

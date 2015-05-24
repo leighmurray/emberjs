@@ -18,7 +18,7 @@ export default Ember.Mixin.create({
 Only if you need do something on the `activate` method you must call `this._super()` at the beginning:
 
 ```app/routes/index.js
-import ResetScroll from '../mixins/reset-scroll/';
+import ResetScroll from 'mixins/reset-scroll/';
 
 export default Ember.Route.extend(ResetScroll, {
   //I need to do other things with activate

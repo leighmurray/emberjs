@@ -7,7 +7,7 @@ Create the component to test using `ember generate component pretty-color`:
 This Ember component:
 
 ```app/components/pretty-color.js
-import layout from '../templates/components/pretty-color';
+import layout from 'templates/components/pretty-color';
 
 export default Ember.Component.extend({
   layout: layout,
@@ -97,7 +97,7 @@ title when clicked. Run `ember generate component my-foo` and open the
 component file:
 
 ```app/components/my-foo.js
-import layout from '../templates/components/my-foo';
+import layout from 'templates/components/my-foo';
 
 export default Ember.Component.extend({
   layout: layout,
@@ -146,7 +146,7 @@ application. Here's a simple component that sends the action `internalAction`
 when a button is clicked:
 
 ```app/components/my-other-foo.js
-import layout from '../templates/components/my-other-foo';
+import layout from 'templates/components/my-other-foo';
 
 export default Ember.Component.extend({
   layout: layout,
@@ -208,7 +208,7 @@ Sometimes components are easier to maintain if they're broken up into parent and
 components. Here is a simple example:
 
 ```app/components/my-album.js
-import layout from '../templates/components/my-kittens';
+import layout from 'templates/components/my-kittens';
 
 export default Ember.Component.extend({
   layout: layout,
@@ -226,7 +226,7 @@ export default Ember.Component.extend({
 ```
 
 ```app/components/my-kitten.js
-import layout from '../templates/components/my-kitten';
+import layout from 'templates/components/my-kitten';
 
 export default Ember.Component.extend({
   layout: layout,
@@ -281,4 +281,4 @@ test('renders kittens', function(assert) {
 ```
 -->
 
-[Unit Testing Basics]: ../unit-testing-basics
+[Unit Testing Basics]: unit-testing-basics

@@ -97,7 +97,7 @@ export default Ember.Controller.extend({
 ```
 
 ```app/controllers/comments.js
-import ClockService from '../services/clock';
+import ClockService from 'services/clock';
 
 export default Ember.ArrayController.extend({
     itemController: 'commentItem',
@@ -191,7 +191,7 @@ Further reading:
 * [Ember Object](http://emberjs.com/api/classes/Ember.Object.html)
 * [Ember Application Initializers](http://emberjs.com/api/classes/Ember.Application.html#toc_initializers)
 * [Method Inject](http://emberjs.com/api/classes/Ember.Application.html#method_inject)
-* [Conditionals](../../templates/conditionals/)
-* [Writing Helpers](../../templates/writing-helpers/)
-* [Defining a Component](../../components/defining-a-component/)
+* [Conditionals](templates/conditionals/)
+* [Writing Helpers](templates/writing-helpers/)
+* [Defining a Component](components/defining-a-component/)
 * [Ember Array Controller](http://emberjs.com/api/classes/Ember.ArrayController.html)
